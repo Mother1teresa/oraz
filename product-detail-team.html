@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточка товара - индивидуальны со скидкой</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav js-menu">
+                <div class="search-bar mobile-only">
+                    <input type="text" placeholder="Поиск...">
+                </div>
+                <a href="#" class="nav-link">О НАС</a>
+                <span class="divider">|</span>
+                <div class="catalog-dropdown js-catalog-parent">
+                    <div class="link-block">
+                        <a href="#" class="nav-link">КАТАЛОГ</a>
+                        <img src="assets/img/header/arr-cat.svg" alt="">
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-item"><img src="men.jpg" alt=""><span>МУЖЧИНАМ</span></div>
+                            <div class="dropdown-item actev-item"><img src="sport.jpg" alt=""><span class="blue-text">ВИД СПОРТА</span></div>
+                            <div class="dropdown-item"><img src="women.jpg" alt=""><span>ЖЕНЩИНАМ</span></div>
+                            <div class="dropdown-item"><img src="acc.jpg" alt=""><span>АКСЕССУАРЫ</span></div>
+                            <div class="dropdown-item"><img src="jersey.jpg" alt=""><span>ДЖЕРСИ</span></div>
+                            <div class="dropdown-item"><img src="teams.jpg" alt=""><span>КОМАНДАМ</span></div>
+                            <div class="dropdown-item"><img src="new.jpg" alt=""><span>НОВИНКИ</span></div>
+                            <div class="dropdown-item"><img src="coll.jpg" alt=""><span>КОЛЛЕКЦИИ</span></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__block-right">
+                <a href="" class="header__logo">
+                    <img src="/assets/img/header/logo-header.svg" alt="ORAZ">
+                </a>
+
+                <div class="header__actions">
+                    <div class="search-bar desktop-only">
+                        <input type="text" placeholder="Поиск...">
+                        <button type="submit">
+                            <img src="assets/img/header/search.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="action-icons">
+                        <a href="#" class="icon-btn"><img src="/assets/img/header/card.svg" alt="Профиль"></a>
+                        <a href="#" class="icon-btn"><img src="/assets/img/header/user.svg" alt="Корзина"></a>
+                        <button class="burger-btn js-burger-toggle"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">
+                        <img src="/assets/img/header/icons/breadcrumbs_svg.svg" alt="" />
+                        Главная
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">
+                        <img src="/assets/img/header/icons/breadcrumbs_svg.svg" alt="" />
+                        Каталог
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">
+                        <img src="/assets/img/header/icons/breadcrumbs_svg.svg" alt="" />
+                        Куртки и бомберы
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <section class="product-page">
+      <div class="container">
+        <div class="product-container">
+          <div class="product-gallery">
+            <!-- Главный слайдер -->
+            <div class="product-gallery__main swiper product-gallery__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/assets/img/product/IMG_0476-2.png"></div>
+                <div class="swiper-slide"><img src="/assets/img/product/IMG_0476-3.png"></div>
+                <div class="swiper-slide"><img src="/assets/img/product/IMG_0476-4.png"></div>
+                <div class="swiper-slide"><img src="/assets/img/product/IMG_0476-2.png"></div>
+              </div>
+              <button class="gallery-arrow gallery-arrow--prev" aria-label="Предыдущее">
+                <img src="/assets/img/promo/Arrow-left.svg" alt="">
+              </button>
+              <button class="gallery-arrow gallery-arrow--next" aria-label="Следующее">
+                <img src="/assets/img/header/icons/Arrow-right.svg" alt="">
+              </button>
+            </div>
+            <!-- Миниатюры -->
+            <div class="product-gallery__thumbs swiper product-gallery__thumbs-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide thumb-item"><img src="/assets/img/product/IMG_0476-3.png" alt="..."></div>
+                <div class="swiper-slide thumb-item"><img src="/assets/img/product/IMG_0476-2.png"></div>
+                <div class="swiper-slide thumb-item"><img src="/assets/img/product/IMG_0476-4.png"></div>
+                <div class="swiper-slide thumb-item"><img src="/assets/img/product/IMG_0476-2.png"></div>
+                <div class="swiper-slide thumb-item"><img src="/assets/img/product/IMG_0476-3.png"></div>
+                <div class="swiper-slide thumb-item"><img src="/assets/img/product/IMG_0476-4.png"></div>
+              </div>
+              <button class="gallery-arrow gallery-arrow--next thumbs-arrow" aria-label="Следующая миниатюра">
+                <img src="/assets/img/header/icons/Arrow-right.svg" alt="">
+              </button>
+              <button class="gallery-arrow gallery-arrow--prev thumbs-arrow" aria-label="Предыдущее миниатюра">
+                <img src="/assets/img/promo/Arrow-left.svg" alt="">
+              </button>
+              <div class="suggest-gradient"></div>
+            </div>
+          </div>
+          <div class="product-info">
+            <h1 class="product-info__title">Бомбер BJ1</h1>
+            <span class="product-info__sku">A101123000</span>
+
+            <div class="product-price-action">
+              <div class="product-prices">
+                <span class="price-current">110.00 BYN</span>
+              </div>
+              <button class="btn btn--buy">Купить</button>
+            </div>
+
+            <div class="product-option">
+              <span class="product-option__label">Цвет:</span>
+              <div class="color-selector">
+                <label class="color-option color-option--blue active">
+                  <input type="radio" name="product_color" value="blue" checked>
+                </label>
+                <label class="color-option color-option--white">
+                  <input type="radio" name="product_color" value="white">
+                </label>
+                <label class="color-option color-option--black">
+                  <input type="radio" name="product_color" value="black">
+                </label>
+              </div>
+            </div>
+
+            <div class="product-specs">
+              <div class="spec-row"><span class="spec-label">Категория товара</span><span class="spec-value spec-value--caps">Куртка</span></div>
+              <div class="spec-row"><span class="spec-label">Состав</span><span class="spec-value">100% хлопок</span></div>
+              <div class="spec-row"><span class="spec-label">Материал подклада</span><span class="spec-value">100% хлопок</span></div>
+              <div class="spec-row"><span class="spec-label">Сезонность</span><span class="spec-value spec-value--caps">Демисезон</span></div>
+              <div class="spec-row"><span class="spec-label">Количество товаров для заказа</span><span class="spec-value">от 1 шт.</span></div>
+              <div class="spec-row"><span class="spec-label">Производство</span><span class="spec-value">ООО «СТУДИЯ КРАВЕЦ», РБ</span></div>
+              <div class="spec-row"><span class="spec-label">Гарантийный срок</span><span class="spec-value">1 год</span></div>
+            </div>
+
+            <a href="#" class="size-table-link open-modal" data-target="modal-sizes">Таблица размеров</a>
+
+            <div class="order-actions">
+                <button class="btn btn--team " data-mode="team">Заказ для команды</button>
+                <button class="btn btn--retail active" data-mode="retail">Купить в розницу</button>
+            </div>
+
+                <p class="product-notice product-notice--team ">
+                * Минимальное число единиц товара для заказа — 10 шт. <br>
+                Пожалуйста, укажите необходимое количество единиц товара, 
+                оформите заказ и дождитесь звонка менеджера для уточнения деталей.
+                </p>
+                <p class="product-notice product-notice--retail active">
+                * Товары, изготовленные по индивидуальному заказу, 
+                возврату и обмену не подлежат.
+                </p>
+
+            <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <h3>Описание товара?</h3>
+                            <span class="arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer_line">
+                                <p>Срок изготовления товара: от Х дней. <br>
+                                Изделия, изготовленные на заказ, возврату не подлежат.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <h3>доставка</h3>
+                            <span class="arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer_line">
+                               <p>Доставляем от 9 BYN по всей Беларуси, России и Казахстану собственными курьерами, а также компаниями Белпочта, Европочта и СДЭК. <br> Более подробно о стоимости, сроках и условиях доставки можно прочитать <a href="">на этой странице сайта</a>.</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <h3>возврат и обмен?</h3>
+                            <span class="arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer_line">
+                            <p>Вы можете оформить возврат/обмен товара надлежащего качества в течение 14 дней c момента получения товара. Возврат денежных средств может осуществляться от 1 до 30 банковских дней. <br>
+                            Более подробно об условиях и сроках возврата можно прочитать <a href="">на этой странице сайта</a> .</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products-suggest">
+        <div class="container">
+          <h1 class="section-title">С этим покупают</h1>
+          <div class="products-suggest__swiper swiper suggestSwiper">
+            <div class="swiper-wrapper">
+              <a href="" class="swiper-slide product-card">
+                <div class="product-card__image">
+                  <span class="badge badge--sale">-50%</span>
+                  <img src="/assets/img/product/item1.png" alt="Лонгслив SL4" />
+                </div>
+                <div class="product-card__info">
+                  <div
+                    ><h3 class="product-card__name">
+                      ЛОНГСЛИВ <br />
+                      SL4
+                    </h3></div
+                  >
+                  <div class="product-card__price-group">
+                    <span class="product-card__price product-card__price--new"
+                      >108.00 BYN</span
+                    >
+                    <span class="product-card__price product-card__price--old"
+                      >216.00 BYN</span
+                    >
+                  </div>
+                </div>
+              </a>
+              <a href="" class="swiper-slide product-card">
+                <div class="product-card__image">
+                  <span class="badge badge--out">Нет в наличии</span>
+                  <img src="/assets/img/product/item1.png" alt="Лонгслив SL4" />
+                </div>
+                <div class="product-card__info">
+                  <div
+                    ><h3 class="product-card__name">
+                      ЛОНГСЛИВ <br />
+                      SL4
+                    </h3></div
+                  >
+                  <div class="product-card__price-group">
+                    <span class="product-card__price product-card__price--new"
+                      >108.00 BYN</span
+                    >
+                    <span class="product-card__price product-card__price--old"
+                      >216.00 BYN</span
+                    >
+                  </div>
+                </div>
+              </a>
+              <a href="" class="swiper-slide product-card">
+                <div class="product-card__image">
+                  <span class="badge badge--sale">-50%</span>
+                  <img src="/assets/img/product/item1.png" alt="Лонгслив SL4" />
+                </div>
+                <div class="product-card__info">
+                  <div
+                    ><h3 class="product-card__name">
+                      ЛОНГСЛИВ <br />
+                      SL4
+                    </h3></div
+                  >
+                  <div class="product-card__price-group">
+                    <span class="product-card__price product-card__price--new"
+                      >108.00 BYN</span
+                    >
+                    <span class="product-card__price product-card__price--old"
+                      >216.00 BYN</span
+                    >
+                  </div>
+                </div>
+              </a>
+              <a href="" class="swiper-slide product-card">
+                <div class="product-card__image">
+                  <span class="badge badge--sale">-50%</span>
+                  <img src="/assets/img/product/item1.png" alt="Лонгслив SL4" />
+                </div>
+                <div class="product-card__info">
+                  <div
+                    ><h3 class="product-card__name">
+                      ЛОНГСЛИВ <br />
+                      SL4
+                    </h3></div>
+                  <div class="product-card__price-group">
+                    <span class="product-card__price product-card__price--new"
+                      >108.00 BYN</span
+                    >
+                    <span class="product-card__price product-card__price--old"
+                      >216.00 BYN</span
+                    >
+                  </div>
+                </div>
+              </a>
+              <a href="" class="swiper-slide product-card">
+                <div class="product-card__image">
+                  <span class="badge badge--sale">-50%</span>
+                  <img src="/assets/img/product/item1.png" alt="Лонгслив SL4" />
+                </div>
+                <div class="product-card__info">
+                  <div
+                    ><h3 class="product-card__name">
+                      ЛОНГСЛИВ <br />
+                      SL4
+                    </h3></div
+                  >
+                  <div class="product-card__price-group">
+                    <span class="product-card__price product-card__price--new"
+                      >108.00 BYN</span
+                    >
+                    <span class="product-card__price product-card__price--old"
+                      >216.00 BYN</span
+                    >
+                  </div>
+                </div>
+              </a>
+              <a href="" class="swiper-slide product-card">
+                <div class="product-card__image">
+                  <span class="badge badge--sale">-50%</span>
+                  <img src="/assets/img/product/item1.png" alt="Лонгслив SL4" />
+                </div>
+                <div class="product-card__info">
+                  <div
+                    ><h3 class="product-card__name">
+                      ЛОНГСЛИВ <br />
+                      SL4
+                    </h3></div
+                  >
+                  <div class="product-card__price-group">
+                    <span class="product-card__price product-card__price--new"
+                      >108.00 BYN</span
+                    >
+                    <span class="product-card__price product-card__price--old"
+                      >216.00 BYN</span
+                    >
+                  </div>
+                </div>
+                </a>
+            </div>
+          </div>
+          <div class="suggest-next">
+            <img src="/assets/img/header/icons/Arrow-right.svg" alt="" />
+          </div>
+          <div class="suggest-gradient"></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="/assets/img/header/icons/footer_logo.svg" alt="ORAZ" class="footer__logo">
+                    <a href="#" class="footer__brand-link"><h2>ПОСЛАНИЕ БРЕНДА</h2></a>
+                </div>
+
+                <nav class="footer__grid">
+                    <!-- О компании -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">О КОМПАНИИ</h4>
+                        <ul class="footer__list">
+                            <li><a href="#">О НАС</a></li>
+                            <li><a href="#">КАТАЛОГ</a></li>
+                            <li><a href="#">ПОЛЕЗНЫЕ СТАТЬИ</a></li>
+                            <li><a href="#">НОВОСТИ</a></li>
+                            <li><a href="#">НАШИ АМБАССАДОРЫ</a></li>
+                            <li><a href="#">ВАКАНСИИ</a></li>
+                            <li><a href="#">ORAZ COMMUNITY</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Контакты -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">КОНТАКТЫ</h4>
+                        <div class="footer__info">
+                            <p>ЮРИДИЧЕСКИЙ АДРЕС</p>
+                            <span>МИНСК, УЛ. СТАХАНОВСКАЯ, 24, ПОМ. 2Н</span>
+                        </div>
+                        <div class="footer__info">
+                            <p>E-MAIL</p>
+                            <a href="mailto:infooraz@gmail.com">INFOORAZ@GMAIL.COM</a>
+                        </div>
+                        <div class="footer__info">
+                            <p>РЕЖИМ РАБОТЫ:</p>
+                            <span>ПН-ПТ: 9-30<br>СБ-ВС: ВЫХОДНОЙ</span>
+                        </div>
+                        <div class="footer__info">
+                            <p>КОНТАКТНЫЙ НОМЕР:</p>
+                            <a href="tel:+375298305264">+375 29 830 5264</a>
+                            <a href="tel:+375445913998">+375 44 591 3998</a>
+                            <a href="tel:+375172510155">+375 17 251 0155</a>
+                        </div>
+                        <div class="footer__socials">
+                            <p>МЫ В СОЦ. СЕТЯХ</p>
+                            <div class="footer__social-links">
+                                <a href="#"><img src="/assets/img/header/icons/tg.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/ins.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/vk.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/f.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/you.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Информация -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">ИНФОРМАЦИЯ</h4>
+                        <ul class="footer__list">
+                            <li><a href="#">ДЛЯ ПОКУПАТЕЛЯ</a></li>
+                            <li><a href="#">ГАРАНТИЯ</a></li>
+                            <li><a href="#">ЛИЦЕНЗИЯ</a></li>
+                            <li><a href="#">ДОСТАВКА | ВОЗВРАТ | ОБМЕН</a></li>
+                            <li><a href="#">СПОСОБЫ ОПЛАТЫ</a></li>
+                            <li><a href="#">ДОГОВОР-ОФЕРТА</a></li>
+                            <li><a href="#">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a></li>
+                            <li><a href="#">ПОЛИТИКА ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</a></li>
+                            <li><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <hr class="footer__divider">
+            <!-- Платежные системы -->
+            <div class="footer__payments">
+                <img src="/assets/img/header/icons/Visa.svg" alt="Visa">
+                <img src="/assets/img/header/icons/Mastercard.svg" alt="Mastercard">
+                <img src="/assets/img/header/icons/belkart.svg" alt="Белкарт">
+                <img src="/assets/img/header/icons/belcart_pass.svg" alt="">
+                <img src="/assets/img/header/icons/bePaid.svg" alt="bePaid">
+                <img src="/assets/img/header/icons/GPay.svg" alt="GPay">
+            </div>
+            <!-- Копирайт -->
+            <div class="footer__bottom">
+                <p>© 2005-2025 Общество с ограниченной ответственностью «СТУДИЯ КРАВЕЦ», все права защищены.</p>
+                <p>УНП: 192121324 Р/с: BY02 BPSB 3012 1632 9501 3933 0000 Банк: ОАО «Сбер Банк» BIC (SWIFT): BPSBBY2X</p>
+                <p>Рег.номер в торговом реестре РБ: 527587 от 26.01.2022. Рег.орган: Администрация Партизанского района города Минска. Дата регистрации: 17.08.2013.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script/swiper-bundle.min.js"></script>
+    <script src="script/index.js"></script>
+    <div id="modal-sizes" class="modal-overlay">
+    <div class="modal">
+        <button class="modal-close" aria-label="Закрыть окно">&times;</button>
+        <h1 class="section-title modal-title">Таблица размеров</h1>
+        
+        <div class="modal-table-wrapper">
+            <table class="modal-size-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>XS</th>
+                        <th>S</th>
+                        <th>M</th>
+                        <th>L</th>
+                        <th>XL</th>
+                        <th>XXL</th>
+                        <th>3XL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="row-title">Европейская сетка</td>
+                        <td>34</td>
+                        <td>36</td>
+                        <td>38</td>
+                        <td>40</td>
+                        <td>42</td>
+                        <td>44</td>
+                        <td>46</td>
+                    </tr>
+                    <tr>
+                        <td class="row-title">Обхват груди, см</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td class="row-title">Обхват талии, см</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td class="row-title">Обхват бедер, см</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td class="row-title">Рост, см</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-actions">
+            <a href="#" class="btn modal-actions__btn">Скачать таблицу</a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

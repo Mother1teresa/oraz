@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница каталога</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav js-menu">
+                <div class="search-bar mobile-only">
+                    <input type="text" placeholder="Поиск...">
+                </div>
+                <a href="#" class="nav-link">О НАС</a>
+                <span class="divider">|</span>
+                <div class="catalog-dropdown js-catalog-parent">
+                    <div class="link-block">
+                        <a href="#" class="nav-link">КАТАЛОГ</a>
+                        <img src="assets/img/header/arr-cat.svg" alt="">
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-item"><img src="men.jpg" alt=""><span>МУЖЧИНАМ</span></div>
+                            <div class="dropdown-item actev-item"><img src="sport.jpg" alt=""><span class="blue-text">ВИД СПОРТА</span></div>
+                            <div class="dropdown-item"><img src="women.jpg" alt=""><span>ЖЕНЩИНАМ</span></div>
+                            <div class="dropdown-item"><img src="acc.jpg" alt=""><span>АКСЕССУАРЫ</span></div>
+                            <div class="dropdown-item"><img src="jersey.jpg" alt=""><span>ДЖЕРСИ</span></div>
+                            <div class="dropdown-item"><img src="teams.jpg" alt=""><span>КОМАНДАМ</span></div>
+                            <div class="dropdown-item"><img src="new.jpg" alt=""><span>НОВИНКИ</span></div>
+                            <div class="dropdown-item"><img src="coll.jpg" alt=""><span>КОЛЛЕКЦИИ</span></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__block-right">
+                <a href="" class="header__logo">
+                    <img src="/assets/img/header/logo-header.svg" alt="ORAZ">
+                </a>
+
+                <div class="header__actions">
+                    <div class="search-bar desktop-only">
+                        <input type="text" placeholder="Поиск...">
+                        <button type="submit">
+                            <img src="assets/img/header/search.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="action-icons">
+                        <a href="#" class="icon-btn"><img src="/assets/img/header/card.svg" alt="Профиль"></a>
+                        <a href="#" class="icon-btn"><img src="/assets/img/header/user.svg" alt="Корзина"></a>
+                        <button class="burger-btn js-burger-toggle"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">
+                        <img src="/assets/img/header/icons/breadcrumbs_svg.svg" alt="" />
+                        Главная
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">
+                        <img src="/assets/img/header/icons/breadcrumbs_svg.svg" alt="" />
+                        Каталог
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__layout">
+                    <aside class="catalog-filters">
+                        <div class="filter-group active">
+                            <button class="filter-group__title">Тип товара</button>
+                            <ul class="filter-group__list">
+                                <li><a href="#" class="filter-group__link active">Футболки</a></li>
+                                <li><a href="#" class="filter-group__link">Худи и толстовки</a></li>
+                                <li><a href="#" class="filter-group__link">Свитшоты</a></li>
+                                <li><a href="#" class="filter-group__link">Лонгсливы</a></li>
+                                <li><a href="#" class="filter-group__link">Шорты</a></li>
+                                <li><a href="#" class="filter-group__link">Спортивные костюмы</a></li>
+                                <li><a href="#" class="filter-group__link">Ветровки костюмы</a></li>
+                                <li><a href="#" class="filter-group__link">Куртки и бомберы</a></li>
+                                <li><a href="#" class="filter-group__link">Аксессуары</a></li>
+                            </ul>
+                        </div>
+                        <div class="filter-group active">
+                            <button class="filter-group__title">Для кого</button>
+                            <div class="filter-group__content">
+                                <label class="filter-radio">
+                                    <input type="radio" name="for_whom" value="men">
+                                    <span>Мужчинам</span>
+                                </label>
+                                <label class="filter-radio">
+                                    <input type="radio" name="for_whom" value="women" checked>
+                                    <span>Женщинам</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-group active">
+                            <button class="filter-group__title">Вид спорта</button>
+                            <div class="filter-group__content">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="sport" value="volleyball" checked>
+                                    <span>Волейбол</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="sport" value="basketball" checked>
+                                    <span>Баскетбол</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="sport" value="tennis">
+                                    <span>Теннис</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="sport" value="run">
+                                    <span>Бег</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="sport" value="fitness">
+                                    <span>Фитнес</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-group active">
+                            <button class="filter-group__title">Коллекции</button>
+                            <div class="filter-group__content">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="collection" value="new">
+                                    <span>Новинки</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="collection" value="col1">
+                                    <span>Коллекция 1</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="collection" value="col2">
+                                    <span>Коллекция 2</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="collection" value="col3">
+                                    <span>Коллекция 3</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-group active">
+                            <button class="filter-group__title">Цвет</button>
+                            <div class="filter-group__content">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="color" value="blue" checked>
+                                    <span>Синий</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="color" value="red">
+                                    <span>Красный</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="color" value="black">
+                                    <span>Черный</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="color" value="white">
+                                    <span>Белый</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="color" value="green">
+                                    <span>Зеленый</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-group active">
+                            <button class="filter-group__title">Количество <br> для заказа</button>
+                            <div class="filter-group__content">
+                                <label class="filter-radio">
+                                    <input type="radio" name="order_type" value="individual" checked>
+                                    <span>Индивидуальный заказ</span>
+                                </label>
+                                <label class="filter-radio">
+                                    <input type="radio" name="order_type" value="team">
+                                    <span>Заказ для команды</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-group active">
+                            <button class="filter-group__title">Цена</button>
+                            <div class="filter-group__content">
+                                <label class="filter-radio">
+                                    <input type="radio" name="price_sort" value="expensive">
+                                    <span>Сначала дороже</span>
+                                </label>
+                                <label class="filter-radio">
+                                    <input type="radio" name="price_sort" value="cheap" checked>
+                                    <span>Сначала дешевле</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </aside>
+                    <div class="catalog-products">
+                        <div class="catalog-products__empty">
+                            <p class="catalog-products__empty-text">
+                                Усердно шьём, чтобы восполнить<br>распроданные товары
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="seo-section">
+            <div class="container">
+                <h1 class="seo-section__title">Сео текст для продвижения</h1>
+                <div class="seo-section__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="/assets/img/header/icons/footer_logo.svg" alt="ORAZ" class="footer__logo">
+                    <a href="#" class="footer__brand-link"><h2>ПОСЛАНИЕ БРЕНДА</h2></a>
+                </div>
+
+                <nav class="footer__grid">
+                    <!-- О компании -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">О КОМПАНИИ</h4>
+                        <ul class="footer__list">
+                            <li><a href="#">О НАС</a></li>
+                            <li><a href="#">КАТАЛОГ</a></li>
+                            <li><a href="#">ПОЛЕЗНЫЕ СТАТЬИ</a></li>
+                            <li><a href="#">НОВОСТИ</a></li>
+                            <li><a href="#">НАШИ АМБАССАДОРЫ</a></li>
+                            <li><a href="#">ВАКАНСИИ</a></li>
+                            <li><a href="#">ORAZ COMMUNITY</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Контакты -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">КОНТАКТЫ</h4>
+                        <div class="footer__info">
+                            <p>ЮРИДИЧЕСКИЙ АДРЕС</p>
+                            <span>МИНСК, УЛ. СТАХАНОВСКАЯ, 24, ПОМ. 2Н</span>
+                        </div>
+                        <div class="footer__info">
+                            <p>E-MAIL</p>
+                            <a href="mailto:infooraz@gmail.com">INFOORAZ@GMAIL.COM</a>
+                        </div>
+                        <div class="footer__info">
+                            <p>РЕЖИМ РАБОТЫ:</p>
+                            <span>ПН-ПТ: 9-30<br>СБ-ВС: ВЫХОДНОЙ</span>
+                        </div>
+                        <div class="footer__info">
+                            <p>КОНТАКТНЫЙ НОМЕР:</p>
+                            <a href="tel:+375298305264">+375 29 830 5264</a>
+                            <a href="tel:+375445913998">+375 44 591 3998</a>
+                            <a href="tel:+375172510155">+375 17 251 0155</a>
+                        </div>
+                        <div class="footer__socials">
+                            <p>МЫ В СОЦ. СЕТЯХ</p>
+                            <div class="footer__social-links">
+                                <a href="#"><img src="/assets/img/header/icons/tg.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/ins.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/vk.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/f.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/you.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Информация -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">ИНФОРМАЦИЯ</h4>
+                        <ul class="footer__list">
+                            <li><a href="#">ДЛЯ ПОКУПАТЕЛЯ</a></li>
+                            <li><a href="#">ГАРАНТИЯ</a></li>
+                            <li><a href="#">ЛИЦЕНЗИЯ</a></li>
+                            <li><a href="#">ДОСТАВКА | ВОЗВРАТ | ОБМЕН</a></li>
+                            <li><a href="#">СПОСОБЫ ОПЛАТЫ</a></li>
+                            <li><a href="#">ДОГОВОР-ОФЕРТА</a></li>
+                            <li><a href="#">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a></li>
+                            <li><a href="#">ПОЛИТИКА ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</a></li>
+                            <li><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <hr class="footer__divider">
+            <!-- Платежные системы -->
+            <div class="footer__payments">
+                <img src="/assets/img/header/icons/Visa.svg" alt="Visa">
+                <img src="/assets/img/header/icons/Mastercard.svg" alt="Mastercard">
+                <img src="/assets/img/header/icons/belkart.svg" alt="Белкарт">
+                <img src="/assets/img/header/icons/belcart_pass.svg" alt="">
+                <img src="/assets/img/header/icons/bePaid.svg" alt="bePaid">
+                <img src="/assets/img/header/icons/GPay.svg" alt="GPay">
+            </div>
+            <!-- Копирайт -->
+            <div class="footer__bottom">
+                <p>© 2005-2025 Общество с ограниченной ответственностью «СТУДИЯ КРАВЕЦ», все права защищены.</p>
+                <p>УНП: 192121324 Р/с: BY02 BPSB 3012 1632 9501 3933 0000 Банк: ОАО «Сбер Банк» BIC (SWIFT): BPSBBY2X</p>
+                <p>Рег.номер в торговом реестре РБ: 527587 от 26.01.2022. Рег.орган: Администрация Партизанского района города Минска. Дата регистрации: 17.08.2013.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script/index.js"></script>
+</body>
+</html>

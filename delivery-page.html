@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доставка спортивной экипировки</title>
+    <link rel="stylesheet" href="assets/style.css" />
+
+<base target="_blank">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav js-menu">
+                <div class="search-bar mobile-only">
+                    <input type="text" placeholder="Поиск...">
+                </div>
+                <a href="#" class="nav-link">О НАС</a>
+                <span class="divider">|</span>
+                <div class="catalog-dropdown js-catalog-parent">
+                    <div class="link-block">
+                        <a href="#" class="nav-link">КАТАЛОГ</a>
+                        <img src="assets/img/header/arr-cat.svg" alt="">
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-item"><img src="men.jpg" alt=""><span>МУЖЧИНАМ</span></div>
+                            <div class="dropdown-item actev-item"><img src="sport.jpg" alt=""><span class="blue-text">ВИД СПОРТА</span></div>
+                            <div class="dropdown-item"><img src="women.jpg" alt=""><span>ЖЕНЩИНАМ</span></div>
+                            <div class="dropdown-item"><img src="acc.jpg" alt=""><span>АКСЕССУАРЫ</span></div>
+                            <div class="dropdown-item"><img src="jersey.jpg" alt=""><span>ДЖЕРСИ</span></div>
+                            <div class="dropdown-item"><img src="teams.jpg" alt=""><span>КОМАНДАМ</span></div>
+                            <div class="dropdown-item"><img src="new.jpg" alt=""><span>НОВИНКИ</span></div>
+                            <div class="dropdown-item"><img src="coll.jpg" alt=""><span>КОЛЛЕКЦИИ</span></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__block-right">
+                <a href="" class="header__logo">
+                    <img src="/assets/img/header/logo-header.svg" alt="ORAZ">
+                </a>
+
+                <div class="header__actions">
+                    <div class="search-bar desktop-only">
+                        <input type="text" placeholder="Поиск...">
+                        <button type="submit">
+                            <img src="assets/img/header/search.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="action-icons">
+                        <a href="#" class="icon-btn"><img src="/assets/img/header/card.svg" alt="Профиль"></a>
+                        <a href="#" class="icon-btn"><img src="/assets/img/header/user.svg" alt="Корзина"></a>
+                        <button class="burger-btn js-burger-toggle"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">
+                        <img src="/assets/img/header/icons/breadcrumbs_svg.svg" alt="" />
+                        Главная
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-section_content">
+                    <h1>Доставка спортивной экипировки по РБ, РФ и Казахстану</h1>
+                    <div class="hero-text">
+                        <p>Мы доставляем спортивную экипировку по всей Республике Беларусь, Российской Федерации и Казахстану. Предлагаем несколько способов доставки — вы можете выбрать самый удобный по срокам, стоимости и пункту назначения.</p>
+                        <p>После оформления заказа вы получите всю необходимую информацию для отслеживания отправления. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="delivery-info">
+            <div class="container">
+                <h1>Способы доставки</h1>
+                <div class="delivery-grid">
+                    <div class="delivery-card">
+                        <h3>Белпочта</h3>
+                        <p class="subtitle">Доставка по БР и за границу</p>
+                        <div class="delivery-row">
+                            <span class="label">Пункт доставки</span>
+                            <span class="value">До почтового отделения или до двери</span>
+                        </div>
+                        <div class="delivery-row">
+                            <span class="label">Срок доставки</span>
+                            <span class="value">7-10 рабочих дней</span>
+                        </div>
+                        <div class="delivery-price">от 100.00 BYN</div>
+                    </div>
+
+                    <div class="delivery-card">
+                        <h3>Европочта</h3>
+                        <p class="subtitle">Доставка по БР и в РФ</p>
+                        <div class="delivery-row">
+                            <span class="label">Пункт доставки</span>
+                            <span class="value">До почтового отделения или до двери</span>
+                        </div>
+                        <div class="delivery-row">
+                            <span class="label">Срок доставки</span>
+                            <span class="value">7-10 рабочих дней</span>
+                        </div>
+                        <div class="delivery-price">от 100.00 BYN</div>
+                    </div>
+
+                    <div class="delivery-card">
+                        <h3>СДЭК</h3>
+                        <p class="subtitle">Удобное получение в ближайшем пункте</p>
+                        <div class="delivery-row">
+                            <span class="label">Пункт доставки</span>
+                            <span class="value">Любое почтовое отделение на выбор</span>
+                        </div>
+                        <div class="delivery-row">
+                            <span class="label">Срок доставки</span>
+                            <span class="value">5-10 дней</span>
+                        </div>
+                        <div class="delivery-price">от 100.00 BYN</div>
+                    </div>
+
+                    <div class="delivery-card">
+                        <h3>Самовывоз</h3>
+                        <p class="subtitle">Если вам удобно забрать заказ самостоятельно</p>
+                        <div class="delivery-row">
+                            <span class="label">Адрес</span>
+                            <span class="value">г. Минск, ул. Стахановская, 24</span>
+                        </div>
+                        <div class="delivery-row">
+                            <span class="label">Часы работы</span>
+                            <span class="value">ПН-ПТ: 9:00-17:30</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="delivery-grid_bottom">Оплата за доставку осуществляется покупателем оператору почтового отправления при получении согласно тарифам выбранной службы.
+                    <br><br>
+                    Оплата за доставку по территории иностранных государств производится отдельно по выставленному счёту компании. Для некоторых иностранных государств невозможно заранее определить стоимость доставки, поэтому после оформления заказа мы cрассчитаем её индивидуально и создадим отдельный платёж за доставку. Цены и сроки, указанные ниже, — ориентировочные
+                </p>
+            </div>
+        </section>
+        <section class="steps">
+            <div class="container">
+                <h1>Как производится доставка</h1>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-title">Оформление<br>заказа</div>
+                        <p class="step-desc">Выбираете товары и способ доставки, производите оплату удобным Вам способом.</p>
+                    </div>
+                    <img src="assets/img/cont/arr-dev.svg" alt="">
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-title">Подготовка<br>к отправке</div>
+                        <p class="step-desc">После оплаты заказа дождитесь подтверждения оформления по почте или номеру телефона.</p>
+                    </div>
+                    <img src="assets/img/cont/arr-dev.svg" alt="">
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-title">Передача<br>в доставку</div>
+                        <p class="step-desc">Сроки будут зависеть от расстояния, наличия праздников/выходных дней и загруженности служб доставки. <br> Вы можете отслеживать статус заказа по трек-номеру.</p>
+                    </div>
+                    <img src="assets/img/cont/arr-dev.svg" alt="">
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-title">Получение<br>заказа</div>
+                        <p class="step-desc">Дождитесь уведомления о готовности выдачи заказа и получите курьером/в ПВЗ/на почте.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- FAQ -->
+        <section class="fag">
+            <div class="container">
+                <h1>Часто задаваемые вопросы</h1>
+                <div class="faq-list">
+                    <div class="faq-item active">
+                        <button class="faq-question">
+                            <h3>Какие примерно сроки доставки?</h3>
+                            <span class="arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer_line">
+                                <strong>По Минску</strong>
+                                <p>В случае наличия готового изделия и заказа до 12:00 — возможен самовывоз в день заказа. Как правило, срок изготовления изделия и сбора заказа не превышает 14 дней с момента заказа. Заказ доступен для самовывоза с понедельника по пятницу. <br>
+                                Если сроки доставки заказа изменяются по какой‑либо причине (поломка транспорта, погодные условия, форс мажор и т.п.) менеджер вас обязательно предупредит и согласует новое время и способ.</p>
+                            </div>
+                            <div class="faq-answer_line"><strong>По Беларуси</strong>
+                                <p>Доставка почтовой службой занимает как правило 2–4 дня со дня отправки. Так же вы можете запросить у менеджера трекинг код (код почтового отправления), по которому вы можно отследить историю перемещения вашего заказа. Как правило бизнес-почта сообщает трекинг код только на следующий день после отправки заказа.</p>
+                            </div>
+                            <div class="faq-answer_line">
+                                <strong>В Россию</strong>
+                            <p>Доставка почтовой службой занимает как правило от 4 до 25 дней со дня отправки. В первую очередь задержка вызвана таможенной проверкой и удалённостью конкретного получателя.</p>
+                            </div>
+                            <div class="faq-answer_line"><strong>В Казахстан</strong>
+                                <p>Доставка почтовой службой занимает как правило от 4 до 25 дней со дня отправки. В первую очередь задержка вызвана таможенной проверкой и удалённостью конкретного получателя.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <h3>Как оформить возврат?</h3>
+                            <span class="arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer_line">
+                                <p>Вы можете оформить возврат/обмен товара надлежащего качества в течение 21 дней c момента получения товара. Для этого нужно отправить товар обратно нам по адресу — Беларусь, Минская область, Минск, улица Стахановская, 24, помещение 2Н до востребования, для ООО «СТУДИЯ КРАВЕЦ» УНП 192121324.</p>
+                            </div>
+                            <div class="faq-answer_line"><p>После отправки пришлите трек-номер на info@oraz.by.</p></div>
+                            <p>ВАЖНО:</p>
+                            <ol type="1" style="padding-left: 2rem;">
+                                <li>Несколько видов товаров освобождаются от возврата:</li>
+                                <ul>
+                                    <li>подарочные карты;</li>
+                                    <li>товары со скидкой (в тоже время скидка по промокоду не влияет на возможность возврата приобретённого товара).</li>
+                                </ul>
+                                <li>При возврате товара надлежащего качества должны быть сохранены товарный вид, комплектация. Наличие следов эксплуатации может стать основанием для отказа в удовлетворении ваших требований.</li>
+                                <li>Вы будете нести ответственность за оплату собственных расходов по доставке при возврате вашего товара. Стоимость доставки возврату не подлежит.</li>
+                                <li>Возврат денежных средств может осуществляться от 1 до 30 банковских дней.</li>
+                                <li>Если товар (услуга) был оплачен банковской картой через сайт, то возврат осуществляется на карту, с которой была произведена оплата. Срок поступления денежных средств на карту — от 1 до 30 дней с момента осуществления возврата Продавцом.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <h3>За сколько дней до мероприятия заказать?</h3>
+                            <span class="arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Для пошива командной одежды рекомендуем обращаться за 30 рабочих дней до мероприятия — этого времени хватит на дизайн, мерки, пошив и примерку. Если сроки поджимают, мы постараемся помочь: главное — быстро сообщить, какие изделия нужны, в каком количестве и с каким дизайном. При срочном заказе можно упростить макет или выбрать стандартные размеры.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-section_content">
+                    <button class="btn open-modal" data-target="modal-loyalty">Получить консультацию</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="/assets/img/header/icons/footer_logo.svg" alt="ORAZ" class="footer__logo">
+                    <a href="#" class="footer__brand-link"><h2>ПОСЛАНИЕ БРЕНДА</h2></a>
+                </div>
+
+                <nav class="footer__grid">
+                    <!-- О компании -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">О КОМПАНИИ</h4>
+                        <ul class="footer__list">
+                            <li><a href="#">О НАС</a></li>
+                            <li><a href="#">КАТАЛОГ</a></li>
+                            <li><a href="#">ПОЛЕЗНЫЕ СТАТЬИ</a></li>
+                            <li><a href="#">НОВОСТИ</a></li>
+                            <li><a href="#">НАШИ АМБАССАДОРЫ</a></li>
+                            <li><a href="#">ВАКАНСИИ</a></li>
+                            <li><a href="#">ORAZ COMMUNITY</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Контакты -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">КОНТАКТЫ</h4>
+                        <div class="footer__info">
+                            <p>ЮРИДИЧЕСКИЙ АДРЕС</p>
+                            <span>МИНСК, УЛ. СТАХАНОВСКАЯ, 24, ПОМ. 2Н</span>
+                        </div>
+                        <div class="footer__info">
+                            <p>E-MAIL</p>
+                            <a href="mailto:infooraz@gmail.com">INFOORAZ@GMAIL.COM</a>
+                        </div>
+                        <div class="footer__info">
+                            <p>РЕЖИМ РАБОТЫ:</p>
+                            <span>ПН-ПТ: 9-30<br>СБ-ВС: ВЫХОДНОЙ</span>
+                        </div>
+                        <div class="footer__info">
+                            <p>КОНТАКТНЫЙ НОМЕР:</p>
+                            <a href="tel:+375298305264">+375 29 830 5264</a>
+                            <a href="tel:+375445913998">+375 44 591 3998</a>
+                            <a href="tel:+375172510155">+375 17 251 0155</a>
+                        </div>
+                        <div class="footer__socials">
+                            <p>МЫ В СОЦ. СЕТЯХ</p>
+                            <div class="footer__social-links">
+                                <a href="#"><img src="/assets/img/header/icons/tg.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/ins.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/vk.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/f.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/you.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Информация -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">ИНФОРМАЦИЯ</h4>
+                        <ul class="footer__list">
+                            <li><a href="#">ДЛЯ ПОКУПАТЕЛЯ</a></li>
+                            <li><a href="#">ГАРАНТИЯ</a></li>
+                            <li><a href="#">ЛИЦЕНЗИЯ</a></li>
+                            <li><a href="#">ДОСТАВКА | ВОЗВРАТ | ОБМЕН</a></li>
+                            <li><a href="#">СПОСОБЫ ОПЛАТЫ</a></li>
+                            <li><a href="#">ДОГОВОР-ОФЕРТА</a></li>
+                            <li><a href="#">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a></li>
+                            <li><a href="#">ПОЛИТИКА ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</a></li>
+                            <li><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <hr class="footer__divider">
+            <!-- Платежные системы -->
+            <div class="footer__payments">
+                <img src="/assets/img/header/icons/Visa.svg" alt="Visa">
+                <img src="/assets/img/header/icons/Mastercard.svg" alt="Mastercard">
+                <img src="/assets/img/header/icons/belkart.svg" alt="Белкарт">
+                <img src="/assets/img/header/icons/belcart_pass.svg" alt="">
+                <img src="/assets/img/header/icons/bePaid.svg" alt="bePaid">
+                <img src="/assets/img/header/icons/GPay.svg" alt="GPay">
+            </div>
+            <!-- Копирайт -->
+            <div class="footer__bottom">
+                <p>© 2005-2025 Общество с ограниченной ответственностью «СТУДИЯ КРАВЕЦ», все права защищены.</p>
+                <p>УНП: 192121324 Р/с: BY02 BPSB 3012 1632 9501 3933 0000 Банк: ОАО «Сбер Банк» BIC (SWIFT): BPSBBY2X</p>
+                <p>Рег.номер в торговом реестре РБ: 527587 от 26.01.2022. Рег.орган: Администрация Партизанского района города Минска. Дата регистрации: 17.08.2013.</p>
+            </div>
+        </div>
+    </footer>
+   
+    <div id="modal-loyalty" class="modal-overlay">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h1 class="modal-title">Заявка на сотрудничество</h1>
+            <p class="modal-subtitle">Заполните поля</p>
+            <p class="modal-hint">* Поле, обязательное для заполнения.</p>
+            <form class="contacts__form feedback__form">
+                <div class="contacts__form-group feedback__input-group">
+                    <label class="contacts__form-label">ФИО</label>
+                    <input type="text" name="name" class="contacts__form-input feedback__input" placeholder="Иванов Иван Иванович">
+                    <span class="error-message">Введите ваше имя</span>
+                </div>
+                <div class="contacts__form-group feedback__input-group">
+                    <label class="contacts__form-label">E-mail<span class="required">*</span></label>
+                    <input type="email" name="email" class="contacts__form-input feedback__input" placeholder="mail@mail.com">
+                    <span class="error-message">Введите корректный e-mail</span>
+                </div>
+                <div class="contacts__form-group feedback__input-group">
+                    <label class="contacts__form-label">Номер телефона</label>
+                    <input type="tel" id="phone_by" name="phone" class="contacts__form-input feedback__input" placeholder="+375 (00) 000 0000" maxlength="19">
+                    <span class="error-message">Некорректный номер телефона</span>
+                </div>
+                <div class="contacts__form-group feedback__input-group">
+                    <label class="contacts__form-label">Желаемая вакансия</label>
+                    <input type="text" name="vacancy" class="contacts__form-input feedback__input" placeholder="Укажите, какая вакансия была бы интересна">
+                </div>
+                <div class="contacts__form-group feedback__input-group">
+                    <label class="contacts__form-label">Текст обращения</label>
+                    <textarea name="message" class="contacts__form-input contacts__form-textarea feedback__input" placeholder="Здравствуйте! У меня вопрос..."></textarea>
+                </div>
+                <div class="contacts__form-group feedback__input-group">
+                    <label class="contacts__form-label">О себе</label>
+                    <textarea name="about" class="contacts__form-input contacts__form-textarea feedback__input" placeholder="Расскажите о себе — так нам проще будет подобрать для вас вакансию"></textarea>
+                </div>
+                <div class="form-radio-group">
+                    <div class="form-radio">
+                        <input type="radio" id="privacy1" name="privacy1" required checked>
+                        <label for="privacy1">Я согласен(-на) на <a href="#">обработку персональных данных</a></label>
+                    </div>
+                    <div class="form-radio">
+                        <input type="radio" id="privacy2" name="privacy2" required checked>
+                        <label for="privacy2">Я согласен(-на) с <a href="#">политикой конфиденциальности</a></label>
+                    </div>
+                </div>
+                <div class="contacts__form-footer_btn">
+                    <button type="submit" class="btn">Оставить заявку</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script/index.js"></script>
+</body>
+</html>

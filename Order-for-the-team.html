@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прототип - оформление заказа</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav js-menu">
+                <div class="search-bar mobile-only">
+                    <input type="text" placeholder="Поиск...">
+                </div>
+                <a href="#" class="nav-link">О НАС</a>
+                <span class="divider">|</span>
+                <div class="catalog-dropdown js-catalog-parent">
+                    <div class="link-block">
+                        <a href="#" class="nav-link">КАТАЛОГ</a>
+                        <img src="assets/img/header/arr-cat.svg" alt="">
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-item"><img src="men.jpg" alt=""><span>МУЖЧИНАМ</span></div>
+                            <div class="dropdown-item actev-item"><img src="sport.jpg" alt=""><span class="blue-text">ВИД СПОРТА</span></div>
+                            <div class="dropdown-item"><img src="women.jpg" alt=""><span>ЖЕНЩИНАМ</span></div>
+                            <div class="dropdown-item"><img src="acc.jpg" alt=""><span>АКСЕССУАРЫ</span></div>
+                            <div class="dropdown-item"><img src="jersey.jpg" alt=""><span>ДЖЕРСИ</span></div>
+                            <div class="dropdown-item"><img src="teams.jpg" alt=""><span>КОМАНДАМ</span></div>
+                            <div class="dropdown-item"><img src="new.jpg" alt=""><span>НОВИНКИ</span></div>
+                            <div class="dropdown-item"><img src="coll.jpg" alt=""><span>КОЛЛЕКЦИИ</span></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__block-right">
+                <a href="" class="header__logo">
+                    <img src="/assets/img/header/logo-header.svg" alt="ORAZ">
+                </a>
+
+                <div class="header__actions">
+                    <div class="search-bar desktop-only">
+                        <input type="text" placeholder="Поиск...">
+                        <button type="submit">
+                            <img src="assets/img/header/search.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="action-icons">
+                        <a href="#" class="icon-btn"><img src="/assets/img/header/card.svg" alt="Профиль"></a>
+                        <a href="#" class="icon-btn"><img src="/assets/img/header/user.svg" alt="Корзина"></a>
+                        <button class="burger-btn js-burger-toggle"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="/" class="breadcrumbs__link">
+            <img src="/assets/img/header/icons/breadcrumbs_svg.svg" alt="" />
+            Назад
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="checkout-page">
+      <div class="container">
+        <h1 class="checkout-page__title">Заказ для команды</h1>
+        <div class="checkout-page__subtitle-block">
+          <p class="checkout-page__subtitle">Пожалуйста, укажите необходимое количество единиц товара, заполните поля ниже и дождитесь звонка менеджера для уточнения деталей.</p>
+          <p class="checkout-page__subtitle">Минимальное число единиц товара для заказа — 10 шт.</p>
+          <p class="checkout-page__subtitle">Изделия, изготовленные на заказ, возврату не подлежат.</p>
+
+        </div>
+        
+        <div class="checkout-layout">
+          <div class="checkout-form-wrapper">
+            <form class="" id="checkoutForm">
+                <div class="cart-item" data-id="1" data-price="1000" data-qty="10">
+                    <div class="cart-item__image">
+                    <img src="/assets/img/product/item1.png" alt="Бомбер BJ1">
+                    </div>
+                    <div class="cart-item__info">
+                    <div class="cart-item__header">
+                        <h3 class="cart-item__name">Наименование товара</h3>
+                    </div>
+                    <div class="cart-item__details">
+                        <div class="cart-item__detail"><span class="cart-item__detail-label">Цвет:</span> <span class="cart-item__detail-value">Синий</span></div>
+                        <div class="cart-item__detail"><span class="cart-item__detail-label">Размер:</span> <span class="cart-item__detail-value">От 42/170 до 50/190</span></div>
+                        <div class="cart-item__detail"><span class="cart-item__detail-label">Категория товара:</span> <span class="cart-item__detail-value cart-item__detail-value--caps">Куртка</span></div>
+                        <div class="cart-item__detail"><span class="cart-item__detail-label">Состав:</span> <span class="cart-item__detail-value">100% хлопок</span></div>
+                        <div class="cart-item__detail"><span class="cart-item__detail-label">Материал подклада:</span> <span class="cart-item__detail-value">100% хлопок</span></div>
+                        <div class="cart-item__detail"><span class="cart-item__detail-label">Сезонность:</span> <span class="cart-item__detail-value cart-item__detail-value--caps">Демисезон</span></div>
+                        <div class="cart-item__detail"><span class="cart-item__detail-label">Производство:</span> <span class="cart-item__detail-value">ООО «СТУДИЯ КРАВЕЦ», РБ</span></div>
+                        <div class="cart-item__detail"><span class="cart-item__detail-label">Гарантийный срок:</span> <span class="cart-item__detail-value">1 год</span></div>
+                    </div>
+                    <div class="cart-item__actions">
+                        <div class="qty-control">
+                        <button class="qty-control__btn qty-control__btn--minus" aria-label="Уменьшить">−</button>
+                        <input type="number" class="qty-control__input" value="10" min="1" max="99" readonly>
+                        <button class="qty-control__btn qty-control__btn--plus" aria-label="Увеличить">+</button>
+                        </div>
+                        <button class="clear-block" aria-label="Удалить">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2m3 0v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6h14zM10 11v6M14 11v6"/></svg>
+                        </button>
+                    </div>
+                    </div>
+                    <div class="card-item_price-block">
+                        <span class="cart-item__sku">A101123000</span>
+                        <div class="cart-item__price">
+                            <span class="cart-item__price-value">1000.00 BYN</span>
+                        </div>
+                    </div>
+                </div>
+              <div class="checkout-form__section">
+                <h3 class="checkout-form__section-title">Данные для доставки</h3>
+                <p class="checkout-page__hint">* Поле, обязательное для заполнения.</p>
+                <div class="contacts__form feedback__form">
+                <div class="contacts__form-group">
+                  <label class="contacts__form-label">ФИО*</label>
+                  <input type="text" name="fullname" class="contacts__form-input feedback__input" placeholder="Иванов Иван Иванович" required>
+                </div>
+                
+                <div class="contacts__form-group">
+                  <label class="contacts__form-label">Номер телефона*</label>
+                  <input type="tel" name="phone" class="contacts__form-input feedback__input" placeholder="+375 (00) 000-00-00" required>
+                </div>
+                
+                <div class="contacts__form-group">
+                  <label class="contacts__form-label">E-mail*</label>
+                  <input type="email" name="email" class="contacts__form-input feedback__input" placeholder="mail@mail.com" required>
+                </div>
+                
+                <div class="contacts__form-group feedback__input-group form-group--select">
+                  <select name="country" class="contacts__form-input feedback__input form-select" required>
+                    <option value="" disabled selected hidden>Страна/регион*</option>
+                    <option value="by">Беларусь</option>
+                    <option value="ru">Россия</option>
+                    <option value="kz">Казахстан</option>
+                  </select>
+                </div>
+
+                <div class="contacts__form-group feedback__input-group form-group--select">
+                  <select name="delivery" class="contacts__form-input feedback__input form-select" required>
+                    <option value="" disabled selected hidden>Способ доставки*</option>
+                    <option value="sdek">СДЭК</option>
+                    <option value="pickup">Самовывоз</option>
+                    <option value="post">Почта</option>
+                  </select>
+                </div>
+
+                <div class="contacts__form-group feedback__input-group form-group--select">
+                  <select name="pvz" class="contacts__form-input feedback__input form-select" required>
+                    <option value="" disabled selected hidden>Пункт ПВЗ*</option>
+                    <option value="pvz1">ПВЗ №1 — ул. Ленина, 10</option>
+                    <option value="pvz2">ПВЗ №2 — пр. Независимости, 25</option>
+                  </select>
+                </div>
+                
+                <div class="contacts__form-group">
+                  <label class="contacts__form-label">Адрес</label>
+                  <input type="text" name="address" class="contacts__form-input feedback__input" placeholder="Почтовый индекс, населённый пункт, наименование улицы/дома, номер дома, номер квартиры">
+                </div>
+                </div>
+              </div>
+
+              <div class="form-radio-group form-radio-group-upd">
+                <div class="form-radio">
+                  <input type="radio" id="privacy1" name="privacy_data" required checked>
+                  <label for="privacy1">Я согласен(-на) на <a href="#">обработку персональных данных</a></label>
+                </div>
+                <div class="form-radio">
+                  <input type="radio" id="privacy2" name="privacy_policy" required checked>
+                  <label for="privacy2">Я согласен(-на) с <a href="#">политикой конфиденциальности</a></label>
+                </div>
+              </div>
+
+              <div class="checkout-form__section">
+                <h3 class="checkout-form__section-title mar-bot-title">Способы оплаты</h3>
+                <div class="form-radio-group">
+                  <div class="form-radio">
+                    <input type="radio" id="payment1" name="payment" value="erip" checked>
+                    <label for="payment1">Оплатить через ЕРИП</label>
+                  </div>
+                  <p class="checkout-form__payment-desc">ЕРИП позволяет произвести оплату в любом удобном для вас месте, в удобное для вас время, в удобном для вас пункте банковского обслуживания — банкомате, инфокиоске, интернет-банке, кассе банков, с помощью мобильного банкинга и т.д. Вы можете осуществить платёж с использованием наличных денежных средств, электронных денег и банковских платёжных карточек в пунктах банковского обслуживания банков, которые оказывают услуги по приёму платежей, а также посредством инструментов дистанционного банковского обслуживания.</p>
+                  <div class="form-radio">
+                    <input type="radio" id="payment2" name="payment" value="cod">
+                    <label for="payment2">Оплатить при получении</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contacts__form-group feedback__input-group checkout-form__promo">
+                <label class="contacts__form-label">Введите промокод</label>
+                <input type="text" name="promo" class="contacts__form-input feedback__input" placeholder="000 000 000 000">
+              </div>
+
+            </form>
+          </div>
+
+          <aside class="cart-summary">
+            
+            <div class="checkout-summary__details">
+              <div class="cart-summary__row cart-summary__row3">
+                <span class="cart-summary__label">Количество товаров в заказе</span>
+                <span class="cart-summary__value">22</span>
+              </div>
+              <div class="cart-summary__row cart-summary__row3">
+                <span class="cart-summary__label">Общая стоимость товаров</span>
+                <span class="cart-summary__value">2150.00 BYN</span>
+              </div>
+              <div class="cart-summary__row cart-summary__row3">
+                <span class="cart-summary__label">Способ доставки</span>
+                <span class="cart-summary__value">СДЭК</span>
+              </div>
+              <div class="cart-summary__row cart-summary__row3">
+                <span class="cart-summary__label">Стоимость доставки</span>
+                <span class="cart-summary__value">100.00 BYN</span>
+              </div>
+              <div class="cart-summary__row cart-summary__row3">
+                <span class="cart-summary__label">Скидка по промокоду</span>
+                <span class="cart-summary__value">50.00 BYN</span>
+              </div>
+              <div class="cart-summary__row cart-summary__row--total">
+                <span class="cart-summary__label">Итого</span>
+                <span class="cart-summary__value cart-summary__value--total">2200.00 BYN</span>
+              </div>
+            </div>
+            
+            <div class="contacts__form-footer_btn">
+              <button type="submit" class="btn" form="checkoutForm">Подтвердить заказ</button>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="/assets/img/header/icons/footer_logo.svg" alt="ORAZ" class="footer__logo">
+                    <a href="#" class="footer__brand-link"><h2>ПОСЛАНИЕ БРЕНДА</h2></a>
+                </div>
+
+                <nav class="footer__grid">
+                    <!-- О компании -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">О КОМПАНИИ</h4>
+                        <ul class="footer__list">
+                            <li><a href="#">О НАС</a></li>
+                            <li><a href="#">КАТАЛОГ</a></li>
+                            <li><a href="#">ПОЛЕЗНЫЕ СТАТЬИ</a></li>
+                            <li><a href="#">НОВОСТИ</a></li>
+                            <li><a href="#">НАШИ АМБАССАДОРЫ</a></li>
+                            <li><a href="#">ВАКАНСИИ</a></li>
+                            <li><a href="#">ORAZ COMMUNITY</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Контакты -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">КОНТАКТЫ</h4>
+                        <div class="footer__info">
+                            <p>ЮРИДИЧЕСКИЙ АДРЕС</p>
+                            <span>МИНСК, УЛ. СТАХАНОВСКАЯ, 24, ПОМ. 2Н</span>
+                        </div>
+                        <div class="footer__info">
+                            <p>E-MAIL</p>
+                            <a href="mailto:infooraz@gmail.com">INFOORAZ@GMAIL.COM</a>
+                        </div>
+                        <div class="footer__info">
+                            <p>РЕЖИМ РАБОТЫ:</p>
+                            <span>ПН-ПТ: 9-30<br>СБ-ВС: ВЫХОДНОЙ</span>
+                        </div>
+                        <div class="footer__info">
+                            <p>КОНТАКТНЫЙ НОМЕР:</p>
+                            <a href="tel:+375298305264">+375 29 830 5264</a>
+                            <a href="tel:+375445913998">+375 44 591 3998</a>
+                            <a href="tel:+375172510155">+375 17 251 0155</a>
+                        </div>
+                        <div class="footer__socials">
+                            <p>МЫ В СОЦ. СЕТЯХ</p>
+                            <div class="footer__social-links">
+                                <a href="#"><img src="/assets/img/header/icons/tg.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/ins.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/vk.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/f.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/you.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Информация -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">ИНФОРМАЦИЯ</h4>
+                        <ul class="footer__list">
+                            <li><a href="#">ДЛЯ ПОКУПАТЕЛЯ</a></li>
+                            <li><a href="#">ГАРАНТИЯ</a></li>
+                            <li><a href="#">ЛИЦЕНЗИЯ</a></li>
+                            <li><a href="#">ДОСТАВКА | ВОЗВРАТ | ОБМЕН</a></li>
+                            <li><a href="#">СПОСОБЫ ОПЛАТЫ</a></li>
+                            <li><a href="#">ДОГОВОР-ОФЕРТА</a></li>
+                            <li><a href="#">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a></li>
+                            <li><a href="#">ПОЛИТИКА ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</a></li>
+                            <li><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <hr class="footer__divider">
+            <!-- Платежные системы -->
+            <div class="footer__payments">
+                <img src="/assets/img/header/icons/Visa.svg" alt="Visa">
+                <img src="/assets/img/header/icons/Mastercard.svg" alt="Mastercard">
+                <img src="/assets/img/header/icons/belkart.svg" alt="Белкарт">
+                <img src="/assets/img/header/icons/belcart_pass.svg" alt="">
+                <img src="/assets/img/header/icons/bePaid.svg" alt="bePaid">
+                <img src="/assets/img/header/icons/GPay.svg" alt="GPay">
+            </div>
+            <!-- Копирайт -->
+            <div class="footer__bottom">
+                <p>© 2005-2025 Общество с ограниченной ответственностью «СТУДИЯ КРАВЕЦ», все права защищены.</p>
+                <p>УНП: 192121324 Р/с: BY02 BPSB 3012 1632 9501 3933 0000 Банк: ОАО «Сбер Банк» BIC (SWIFT): BPSBBY2X</p>
+                <p>Рег.номер в торговом реестре РБ: 527587 от 26.01.2022. Рег.орган: Администрация Партизанского района города Минска. Дата регистрации: 17.08.2013.</p>
+            </div>
+        </div>
+    </footer>
+  <script src="script/index.js"></script>
+</body>
+</html>

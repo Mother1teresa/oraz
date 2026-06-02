@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страницы</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <a href="stock.html">Акции</a>
+    <a href="payment.html">Оплата</a>
+    <a href="cart.html">Корзина пустая</a>
+    <a href="contacts.html">Контакты</a>
+    <a href="404.html">404</a>
+    <a href="blog.html">Полезные статьи</a>
+    <a href="delivery-page.html">Доставка спортивной экипировки</a>
+    <a href="section-page.html">Страница каталога</a>
+    <a href="product-detail-team.html">Карточка товара</a>
+    <a href="product-detail-out-of-stock.html">Карточка товара - индивидуальны со скидкой. нет в наличии</a>
+    <a href="product-detail-individual-with-discount.html">Карточка товара - индивидуальны со скидкой 50%</a>
+    <a href="order-placing-an.html">оформление заказа</a>
+    <a href="Order-for-the-team.html">Заказ для команды</a>
+    <a href="no-product.html">нету товара</a>
+    <a href="catalog.html">каталог</a>
+    <a href="cart-empty.html">пустая корзина</a>
+    <a href="article-swip.html">Полезные статьи-фото</a>
+    <a href="article-video.html">Полезные статьи-видео</a>
+    <a href="main-page.html">Главная</a>
+    <a href="loyalty-and-quality.html">Программа лояльности</a>
+    <a href="all-ambassadors.html">Ораз Комьюнити</a>
+    <a href="about.html">о КОМПАНИИ</a>
+    <button class="btn order-success-btn">Спасибо за заказ!</button>
+    <button class="btn open-modal" data-target="modal-loyalty">Получить консультацию</button>
+    <button class="btn btn-demo-success">Success</button>
+    <div id="modal-loyalty" class="modal-overlay">
+      <div class="modal">
+        <button class="modal-close" onclick="closeModal()">×</button>
+        <h1 class="modal-title">Заявка на сотрудничество</h1>
+        <p class="modal-subtitle">Заполните поля</p>
+        <p class="modal-hint">* Поле, обязательное для заполнения.</p>
+        <form class="contacts__form feedback__form">
+          <div class="contacts__form-group feedback__input-group">
+            <label class="contacts__form-label">ФИО</label>
+            <input
+              type="text"
+              name="name"
+              class="contacts__form-input feedback__input"
+              placeholder="Иванов Иван Иванович"
+            />
+            <span class="error-message">Введите ваше имя</span>
+          </div>
+          <div class="contacts__form-group feedback__input-group">
+            <label class="contacts__form-label"
+              >E-mail<span class="required">*</span></label
+            >
+            <input
+              type="email"
+              name="email"
+              class="contacts__form-input feedback__input"
+              placeholder="mail@mail.com"
+            />
+            <span class="error-message">Введите корректный e-mail</span>
+          </div>
+          <div class="contacts__form-group feedback__input-group">
+            <label class="contacts__form-label">Номер телефона</label>
+            <input
+              type="tel"
+              id="phone_by"
+              name="phone"
+              class="contacts__form-input feedback__input"
+              placeholder="+375 (00) 000 0000"
+              maxlength="19"
+            />
+            <span class="error-message">Некорректный номер телефона</span>
+          </div>
+          <div class="contacts__form-group feedback__input-group">
+            <label class="contacts__form-label">Желаемая вакансия</label>
+            <input
+              type="text"
+              name="vacancy"
+              class="contacts__form-input feedback__input"
+              placeholder="Укажите, какая вакансия была бы интересна"
+            />
+          </div>
+          <div class="contacts__form-group feedback__input-group">
+            <label class="contacts__form-label">Текст обращения</label>
+            <textarea
+              name="message"
+              class="contacts__form-input contacts__form-textarea feedback__input"
+              placeholder="Здравствуйте! У меня вопрос..."
+            ></textarea>
+          </div>
+          <div class="contacts__form-group feedback__input-group">
+            <label class="contacts__form-label">О себе</label>
+            <textarea
+              name="about"
+              class="contacts__form-input contacts__form-textarea feedback__input"
+              placeholder="Расскажите о себе — так нам проще будет подобрать для вас вакансию"
+            ></textarea>
+          </div>
+          <div class="form-radio-group">
+            <div class="form-radio">
+              <input
+                type="radio"
+                id="privacy1"
+                name="privacy1"
+                required
+                checked
+              />
+              <label for="privacy1"
+                >Я согласен(-на) на
+                <a href="#">обработку персональных данных</a></label
+              >
+            </div>
+            <div class="form-radio">
+              <input
+                type="radio"
+                id="privacy2"
+                name="privacy2"
+                required
+                checked
+              />
+              <label for="privacy2"
+                >Я согласен(-на) с
+                <a href="#">политикой конфиденциальности</a></label
+              >
+            </div>
+          </div>
+          <div class="contacts__form-footer_btn">
+            <button type="submit" class="btn">Оставить заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-overlay success-overlay">
+      <div class="modal modal--success">
+        <button class="modal-close success-close">×</button>
+        <h1 class="modal-title modal-title--success">
+          СПАСИБО ЗА ВАШ ИНТЕРЕС<br />К БРЕНДУ ORAZ!
+        </h1>
+        <p class="modal-text">
+          Мы обязательно сохраним эту заявку и свяжемся с Вами, как только
+          начнётся набор новых партнёров.
+        </p>
+      </div>
+    </div>
+    <div class="modal-overlay order-overlay">
+      <div class="modal modal--order">
+        <button class="modal-close order-close">×</button>
+        <h1 class="modal-title modal-title--order">СПАСИБО ЗА ЗАКАЗ!</h1>
+        <p class="modal-text">
+          Ваш заказ принят и скоро будет собран.<br><br>
+          Номер заказа будет отправлен на Вашу электронную почту: используйте его для отслеживания статуса заказа в выбранном сервисе доставки.
+        </p>
+      </div>
+    </div>
+    <script src="script/index.js"></script>
+  </body>
+</html>
+<style>
+  body {
+    margin: 1rem auto 0 auto;
+    display: grid;
+    gap: 0.1rem;
+    width: 90%;
+    font-size: 2rem;
+  }
+  @media (max-width: 52rem) {
+    body {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+<script>
+  
+</script>

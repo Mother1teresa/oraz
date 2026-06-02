@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav js-menu">
+                <div class="search-bar mobile-only">
+                    <input type="text" placeholder="Поиск...">
+                </div>
+                <a href="#" class="nav-link">О НАС</a>
+                <span class="divider">|</span>
+                <div class="catalog-dropdown js-catalog-parent">
+                    <div class="link-block">
+                        <a href="#" class="nav-link">КАТАЛОГ</a>
+                        <img src="assets/img/header/arr-cat.svg" alt="">
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-item"><img src="/assets/img/offers/cat2.png" alt=""><span>МУЖЧИНАМ</span></div>
+                            <div class="dropdown-item actev-item"><img src="/assets/img/offers/cat5.jpg" alt=""><span class="blue-text">ВИД СПОРТА</span></div>
+                            <div class="dropdown-item"><img src="/assets/img/offers/cat1.png" alt=""><span>ЖЕНЩИНАМ</span></div>
+                            <div class="dropdown-item"><img src="/assets/img/product/yjcrb.png" alt=""><span>АКСЕССУАРЫ</span></div>
+                            <div class="dropdown-item"><img src="/assets/img/offers/cat7.png" alt=""><span>ДЖЕРСИ</span></div>
+                            <div class="dropdown-item"><img src="/assets/img/offers/cat8.png" alt=""><span>КОМАНДАМ</span></div>
+                            <div class="dropdown-item"><img src="/assets/img/offers/cat4.png" alt=""><span>НОВИНКИ</span></div>
+                            <div class="dropdown-item"><img src="/assets/img/offers/off1-hover.png" alt=""><span>КОЛЛЕКЦИИ</span></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__block-right">
+                <a href="" class="header__logo">
+                    <img src="/assets/img/header/logo-header.svg" alt="ORAZ">
+                </a>
+
+                <div class="header__actions">
+                    <div class="search-bar desktop-only">
+                        <input type="text" placeholder="Поиск...">
+                        <button type="submit">
+                            <img src="assets/img/header/search.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="action-icons">
+                        <a href="#" class="icon-btn"><img src="/assets/img/header/card.svg" alt="Профиль"></a>
+                        <a href="#" class="icon-btn"><img src="/assets/img/header/user.svg" alt="Корзина"></a>
+                        <button class="burger-btn js-burger-toggle"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cookie-banner" id="cookieBanner">
+            <div class="container">
+                <div class="cookie-banner__content">
+                    <h1 class="cookie-banner__title">Мы используем cookies</h1>
+                    <p class="cookie-banner__text">
+                        Для повышения удобства работы с сайтом мы используем файлы cookie. <br>
+                        В них содержатся данные о прошлых посещениях сайта.
+                        <a href="#">Подробнее</a>
+                    </p>
+                </div>
+                <div class="cookie-banner__actions">
+                    <button class="btn cookie-banner__btn">Принять</button>
+                </div>
+            </div>
+        </div>
+        <section class="promo">
+            <div class="promo__swiper swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide promo__slide">
+                        <img src="/assets/img/promo/promo__bg.jpg" alt="background" class="promo__bg">
+                        <div class="promo__overlay"></div>
+                        <div class="promo__content">
+                            <div class="promo__info">
+                            <h2 class="promo__title">До - 20% баскетбольную форму</h2>
+                            <p class="promo__text">для всей спортивной команды <br>— в едином стиле, для сохранения командного духа.</p>
+                            </div>
+                            <div class="promo__footer">
+                                <a href="#" class="btn promo__btn">Перейти к категории</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide promo__slide">
+                        <img src="/assets/img/promo/promo__bg.jpg" alt="background" class="promo__bg">
+                        <div class="promo__overlay"></div>
+                        
+                        <div class="promo__content">
+                            <div class="promo__info">
+                            <h2 class="promo__title">До - 20% баскетбольную форму</h2>
+                            <p class="promo__text">для всей спортивной команды <br>— в едином стиле, для сохранения командного духа.</p>
+                            </div>
+                            <div class="promo__footer">
+                                <a href="#" class="btn promo__btn">Перейти к категории</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo__navs">
+                    <div class="promo__nav promo__nav--prev">
+                        <img src="/assets/img/header/icons/Arrow-left.svg" alt="">
+                    </div>
+                    <div class="promo__pagination swiper-pagination"></div>
+                    <div class="promo__nav promo__nav--next">
+                        <img src="/assets/img/header/icons/Arrow-right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog-block">
+        <div class="container">
+            <h1 class="section-title materials-slider__title">Каталог</h1>
+            <div class="catalog_content">
+                    <a href="#" class="material-card">
+                        <div class="material-card__image">
+                            <img src="/assets/img/offers/cat2.png" alt="Эластан / Спандекс">
+                        </div>
+                        <div class="material-card__overlay">
+                            <h3 class="material-card__title">мужчинам</h3>
+                        </div>
+                    </a>
+                    <a class="material-card">
+                        <div class="material-card__image">
+                            <img src="/assets/img/offers/cat1.png" alt="Хлопок">
+                        </div>
+                        <div class="material-card__overlay">
+                            <h3 class="material-card__title">женщинам</h3>
+                        </div>
+                    </a>
+                    <a class="material-card">
+                        <div class="material-card__image">
+                            <img src="/assets/img/offers/cat7.png" alt="Дышащие мембраны">
+                        </div>
+                        <div class="material-card__overlay">
+                            <h3 class="material-card__title">джерси</h3>
+                        </div>
+                    </a>
+                    <a class="material-card">
+                        <div class="material-card__image">
+                            <img src="/assets/img/offers/cat4.png" alt="Полиэстер">
+                        </div>
+                        <div class="material-card__overlay">
+                            <h3 class="material-card__title">новинки</h3>
+                        </div>
+                    </a>
+                    <a class="material-card">
+                        <div class="material-card__image">
+                            <img src="/assets/img/offers/cat5.jpg" alt="Дышащие мембраны">
+                        </div>
+                        <div class="material-card__overlay">
+                            <h3 class="material-card__title">Вид спорта</h3>
+                        </div>
+                    </a>
+                    <a class="material-card">
+                        <div class="material-card__image">
+                            <img src="/assets/img/product/yjcrb.png" alt="Полиэстер">
+                        </div>
+                        <div class="material-card__overlay">
+                            <h3 class="material-card__title">аксессуары</h3>
+                        </div>
+                    </a>
+                    <a class="material-card">
+                        <div class="material-card__image">
+                            <img src="/assets/img/offers/cat8.png" alt="Дышащие мембраны">
+                        </div>
+                        <div class="material-card__overlay">
+                            <h3 class="material-card__title">командам</h3>
+                        </div>
+                    </a>
+                    <a class="material-card">
+                        <div class="material-card__image">
+                            <img src="/assets/img/offers/off1-hover.png" alt="Дышащие мембраны">
+                        </div>
+                        <div class="material-card__overlay">
+                            <h3 class="material-card__title">Коллекции</h3>
+                        </div>
+                    </a>
+                </div>
+        </div>
+        </section>
+        <!-- ВИДЕО -->
+        <section class="video-section" id="videoSection">
+            <video class="article-video-full__element" id="articleVideoFull" poster="/assets/img/pro/img.jpg" playsinline>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+            <div class="article-video-full__overlay"></div>
+            <div class="container"><h1 class="video-section__title">ЗАГОЛОВОК ВИДЕО</h1></div>
+            
+            <button class="article-video-full__play-btn" id="videoPlayBtnFull" aria-label="Воспроизвести видео">
+                <img src="/assets/img/promo/Polygon1.svg" alt="">
+            </button>
+        </section>
+        <section class="offers-main">
+            <div class="container">
+                <div class="offers__swiper swiper offersSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide offers-main_card">
+                                <a href="">
+                                    <img src="/assets/img/offers/fs.png" alt="offer" class="offer-card__bg">
+                                    <div class="offer-card__overlay"></div>
+                                    <div class="offer-card__content">
+                                        <div class="offer-card__hover-info">
+                                            <h3 class="offer-card__title">баскетбол</h3>
+                                            
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide offers-main_card">
+                                <a href="">
+                                    <img src="/assets/img/offers/off1-hover.png" alt="offer" class="offer-card__bg">                                    
+                                    <div class="offer-card__overlay"></div>
+                                    <div class="offer-card__content">
+                                        <div class="offer-card__hover-info">
+                                            <h3 class="offer-card__title">всё для бега</h3>
+                                            
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide offers-main_card">
+                                <a href="">
+                                    <img src="/assets/img/offers/off3.jpg" alt="offer" class="offer-card__bg">
+                                    <div class="offer-card__overlay"></div>
+                                    <div class="offer-card__content">
+                                        <div class="offer-card__hover-info">
+                                            <h3 class="offer-card__title">теннис</h3>
+                                           
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide offers-main_card">
+                                <a href="">
+                                    <img src="/assets/img/offers/off3.jpg" alt="offer" class="offer-card__bg">
+                                    <div class="offer-card__overlay"></div>
+                                    <div class="offer-card__content">
+                                        <div class="offer-card__hover-info">
+                                            <h3 class="offer-card__title">теннис</h3>
+                                            
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                <div class="suggest-next offers-next">
+                    <img src="/assets/img/header/icons/Arrow-right.svg" alt="next">         
+                </div>
+                <div class="suggest-gradient"></div>
+            </div>
+        </section>
+        <section class="warranty">
+        <div class="warranty-bg">
+            <img src="/assets/img/product/fon-warranty.png" alt="">
+        </div>
+            <div class="container">
+                <div class="warranty-inner">
+                    <div class="warranty-header">
+                        <h1>Гарантия качества</h1>
+                        <p>Мы уверены в качестве нашей продукции и готовы предложить гарантию на каждое изделие при соблюдении всех рекомендаций по уходу.</p>
+                    </div>
+                    <div class="warranty-grid">
+                        <div class="warranty-item">
+                            <div class="warranty-check">
+                                <img src="/assets/img/promo/war.svg" alt="">
+                            </div>
+                            <div>
+                                <h3>Гарантия 1 год</h3>
+                                <p>На термотрансферные нанесения, молнии и другую фурнитуру, прочность швов, устойчивость к стирке, износостойкость ткани (хлопок).</p>
+                            </div>
+                        </div>
+                        <div class="warranty-item">
+                            <div class="warranty-check">
+                                <img src="/assets/img/promo/war.svg" alt="">                            
+                            </div>
+                            <div>
+                                <h3>Гарантия 3 года</h3>
+                                <p>На износостойкость изделий, выполненных из синтетических тканей.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="advantages">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Преимущества ORAZ</h1>
+                </div>
+                <div class="advantage-block">
+                    <div class="advantage-img">
+                        <img src="/assets/img/promo/IMG_0477.png" alt="Качество материалов">
+                    </div>
+                    <div class="advantage-text">
+                        <h3>Собственное производство</h3>
+                        <p>Мы контролируем каждый этап создания экипировки — от разработки модели до готового изделия. Собственное производство позволяет нам поддерживать высокий уровень качества и оперативно реагировать на запросы клиентов.</p>
+                    </div>
+                </div>
+                <div class="advantage-block">
+                    <div class="advantage-text">
+                        <h3>Полный цикл производства</h3>
+                        <p>Все этапы создания спортивной экипировки проходят внутри нашей команды: от идеи и разработки дизайна до пошива и финальной проверки. Такой подход позволяет обеспечить стабильное качество и точное соответствие требованиям заказчика.</p>
+                    </div>
+                    <div class="advantage-img">
+                        <img src="/assets/img/promo/IMG_0476-2.png" alt="Индивидуальный дизайн">
+                    </div>
+                </div>
+                <div class="advantage-block">
+                    <div class="advantage-img">
+                        <img src="/assets/img/promo/IMG_0478.png" alt="Быстрая доставка">
+                    </div>
+                    <div class="advantage-text">
+                        <h3>Участие клиента в создании собственного образа</h3>
+                        <p>Мы предоставляем возможность участвовать в создании экипировки и формировать индивидуальный стиль команды или спортсмена. Вы можете выбрать цвета, элементы дизайна и особенности модели, чтобы получить форму, которая полностью отражает ваш характер и цели.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="instagram-section">
+            <div class="container">
+                <div class="instagram-header">
+                    <div class="instagram-profile">
+                        <div class="instagram-avatar"><img src="/assets/img/product/svg-logo-ins.svg" alt=""></div>
+                        <div class="instagram-info">
+                            <h3>СПОРТИВНАЯ ФОРМА<br>ДЛЯ КОМАНД РБ | РФ</h3>
+                            <p>@oraz_sport</p>
+                        </div>
+                    </div>
+                    <div class="inst-block">
+                        <div class="instagram-stats">
+                            <div class="stat-item">
+                                <div class="number">100</div>
+                                <div class="label">Posts</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="number">100</div>
+                                <div class="label">Followers</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="number">100</div>
+                                <div class="label">Following</div>
+                            </div>
+                        </div>
+                        <button class="btn follow-btn">
+                            <img src="/assets/img/product/Inst.svg" alt="">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+                <div class="instagram-grid">
+                    <img src="/assets/img/offers/off1.jpg" alt="">
+                    <img src="/assets/img/pay/par2.jpg" alt="">
+                    <img src="/assets/img/pro/tall1.png" alt="">
+                    <img src="/assets/img/pay/par1.jpg" alt="">
+                    <img src="/assets/img/pay/par2.jpg" alt="">
+                    <img src="/assets/img/pro/tall1.png" alt="">
+                    <img src="/assets/img/pay/par1.jpg" alt="">
+                    <img src="/assets/img/offers/off1.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="related-articles related-articles_new">
+            <div class="container">
+                <h1 class="section-title related-articles__main-title">НОВОСТИ И СОБЫТИЯ АМБАССАДОРОВ</h1>
+                <div class="related-articles__grid">
+                    <article class="article-card">
+                        <a href="">
+                            <div class="article-card__image">
+                                <img src="/assets/img/promo/cnfnmz.jpg" alt="Новый спорткомплекс">
+                            </div>
+                            <div class="article-card__content">
+                                <h3 class="article-card__title">Новый спорткомплекс в Минске</h3>
+                                <time class="article-card__date">01.01.2025</time>
+                                <p class="article-card__excerpt">В Минске открылся современный спортивный комплекс, объединяющий профессиональные залы, функциональные пространства и инфраструктуру для командных видов спорта. Рассказываем, чем он отличается и почему уже стал точкой притяжения для спортсменов</p>
+                                <div class="article-card__tags">
+                                    <span>Теги:</span>
+                                    <a href="#" class="article-tag">Фитнес</a>
+                                    <a href="#" class="article-tag">Бег</a>
+                                </div>
+                                <a href="#" class="article-card__link">Подробнее</a>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="article-card">
+                        <a href="">
+                            <div class="article-card__image">
+                                <img src="/assets/img/promo/font-sta2.jpg" alt="Чемпионат по баскетболу">
+                            </div>
+                            <div class="article-card__content">
+                                <h3 class="article-card__title">Чемпионат по баскетболу. Итоги.</h3>
+                                <time class="article-card__date">01.01.2025</time>
+                                <p class="article-card__excerpt">Наша партнёрская команда завершила матч уверенной победой со счётом 82:74. Игра получилась динамичной: решающий рывок ребята сделали в последней четверти, показав отличный командный дух и физическую подготовку. Мы гордимся тем, что спортсмены выступали в нашей экипировке — и снова доказали её надёжность</p>
+                                <div class="article-card__tags">
+                                    <span>Теги:</span>
+                                    <a href="#" class="article-tag">Баскетбол</a>
+                                </div>
+                                <a href="#" class="article-card__link">Подробнее</a>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="article-card">
+                        <a href="">
+                            <div class="article-card__image">
+                                <img src="/assets/img/promo/cnfnmz.jpg" alt="Чемпионат по баскетболу">
+                            </div>
+                            <div class="article-card__content">
+                                <h3 class="article-card__title">Чемпионат по баскетболу. Итоги.</h3>
+                                <time class="article-card__date">01.01.2025</time>
+                                <p class="article-card__excerpt">Наша партнёрская команда завершила матч уверенной победой со счётом 82:74. Игра получилась динамичной: решающий рывок ребята сделали в последней четверти, показав отличный командный дух и физическую подготовку.</p>
+                                <div class="article-card__tags">
+                                    <span>Теги:</span>
+                                    <a href="#" class="article-tag">Баскетбол</a>
+                                </div>
+                                <a href="#" class="article-card__link">Подробнее</a>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="cta-section_content"><a href="#" class="btn news-section__btn">К статьям</a></div>
+            </div>
+        </section>
+        <section class="fag">
+            <div class="container">
+                <h1>часто задаваемые вопросы</h1>
+                <div class="faq-list">
+                    <div class="faq-item active">
+                        <button class="faq-question">
+                            <h3>Можно ли создать свой дизайн?</h3>
+                            <span class="arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer_line">
+                                <strong>По Минску</strong>
+                                <p>В случае наличия готового изделия и заказа до 12:00 — возможен самовывоз в день заказа. Как правило, срок изготовления изделия и сбора заказа не превышает 14 дней с момента заказа. Заказ доступен для самовывоза с понедельника по пятницу. <br>
+                                Если сроки доставки заказа изменяются по какой‑либо причине (поломка транспорта, погодные условия, форс мажор и т.п.) менеджер вас обязательно предупредит и согласует новое время и способ.</p>
+                            </div>
+                            <div class="faq-answer_line"><strong>По Беларуси</strong>
+                                <p>Доставка почтовой службой занимает как правило 2–4 дня со дня отправки. Так же вы можете запросить у менеджера трекинг код (код почтового отправления), по которому вы можно отследить историю перемещения вашего заказа. Как правило бизнес-почта сообщает трекинг код только на следующий день после отправки заказа.</p>
+                            </div>
+                            <div class="faq-answer_line">
+                                <strong>В Россию</strong>
+                            <p>Доставка почтовой службой занимает как правило от 4 до 25 дней со дня отправки. В первую очередь задержка вызвана таможенной проверкой и удалённостью конкретного получателя.</p>
+                            </div>
+                            <div class="faq-answer_line"><strong>В Казахстан</strong>
+                                <p>Доставка почтовой службой занимает как правило от 4 до 25 дней со дня отправки. В первую очередь задержка вызвана таможенной проверкой и удалённостью конкретного получателя.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <h3>Размеры — точно ли подойдут?</h3>
+                            <span class="arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer_line">
+                                <p>При заказе одежды на команду хочется быть уверенным, что всё подойдёт идеально. Мы понимаем, насколько важна точность в таких случаях, поэтому шьём не по стандартным размерам, а по меркам. Если у вас уже есть готовые мерки, просто передайте их нам. Мы учтём все данные и сошьём изделие в соответствии с предоставленными параметрами.</p>
+                            </div>
+                            <div class="faq-answer_line">
+                                <p>Если мерок нет, то предлагаем два варианта: <br>
+                                Вариант #1 — вы можете приехать к нам в офис. Наши специалисты помогут вам измерить всех участников команды, чтобы ничего не упустить.
+                            <br>Вариант #2 — мы можем приехать на вашу локацию. Если добраться до нас сложно, наша команда с радостью приедет к вам и снимет все мерки на месте. Это особенно удобно для больших коллективов или команд, у которых плотный тренировочный график.</p>
+                            </div>
+                            <div class="faq-answer_line">
+                                <p>После того как мерки сняты, мы приступаем к изготовлению изделий. Сначала шьём образец и обсуждаем все детали, в том числе желаемое прилегание. После утверждения образца — отшиваем партию. Когда одежда готова, наступает момент примерки:</p>
+                                <ul style="padding-left: 2rem;">
+                                    <li>Мы привозим одежду для проверки.</li>
+                                    <li>Убеждаемся, что всё сидит идеально</li>
+                                </ul>
+                                <p>Если на этапе примерки обнаружатся нюансы — например, нужно подшить длину или скорректировать посадку, мы оперативно внесём изменения.</p>
+                            </div>
+                            <div class="faq-answer_line">
+                                <p>Мы не просто изготавливаем одежду, но и сопровождаем заказ до полной готовности. Если что‑то нужно подогнать — наши мастера оперативно справятся с задачей. Наша цель — чтобы каждый участник вашей команды чувствовал себя комфортно и выглядел превосходно.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <h3>За сколько дней до мероприятия заказать?</h3>
+                            <span class="arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Для пошива командной одежды рекомендуем обращаться за 30 рабочих дней до мероприятия — этого времени хватит на дизайн, мерки, пошив и примерку. Если сроки поджимают, мы постараемся помочь: главное — быстро сообщить, какие изделия нужны, в каком количестве и с каким дизайном. При срочном заказе можно упростить макет или выбрать стандартные размеры.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                            <button class="faq-question">
+                                <h3>Что входит в гарантию?</h3>
+                                <span class="arrow">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9l6 6 6-6"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Для пошива командной одежды рекомендуем обращаться за 30 рабочих дней до мероприятия — этого времени хватит на дизайн, мерки, пошив и примерку. Если сроки поджимают, мы постараемся помочь: главное — быстро сообщить, какие изделия нужны, в каком количестве и с каким дизайном. При срочном заказе можно упростить макет или выбрать стандартные размеры.</p>
+                            </div>
+                    </div>
+                    <div class="faq-item">
+                            <button class="faq-question">
+                                <h3>Что лучше выбрать: синтетику или хлопок?</h3>
+                                <span class="arrow">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9l6 6 6-6"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Для пошива командной одежды рекомендуем обращаться за 30 рабочих дней до мероприятия — этого времени хватит на дизайн, мерки, пошив и примерку. Если сроки поджимают, мы постараемся помочь: главное — быстро сообщить, какие изделия нужны, в каком количестве и с каким дизайном. При срочном заказе можно упростить макет или выбрать стандартные размеры.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+             <h1 class="section-title">ГДЕ МЫ НАХОДИМСЯ</h1>
+            </div>
+            <div class="contacts__map-box">
+                <div class="contacts__map-wrapper">
+                <img src="/assets/img/cont/bg-cont.png" alt="Карта" class="contacts__map-img">
+                <div class="contacts__map-overlay">
+                    <div class="contacts__map-overlay_block">
+                        <div class="contacts__map-info">
+                            <img src="assets/img/cont/tochkf.svg" alt="">
+                            <div class="contacts__map-info_block">
+                                <p>МИНСК, УЛ. СТАХАНОВСКАЯ, 24, ПОМ. 2Н</p>
+                                <p>5 МИНУТ ОТ СТАНЦИИ МЕТРО ТРАКТОРНЫЙ ЗАВОД</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-map">Перейти в карты</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="related-articles related-articles_new rew-new">
+            <div class="container">
+                <h1 class="section-title related-articles__main-title">Отзывы</h1>
+                <div class="related-articles__grid">
+                    <article class="article-card">
+                        <a href="">
+                            <div class="article-card__image">
+                                <img src="/assets/img/avat/avat.jpg" alt="Новый спорткомплекс">
+                            </div>
+                            <div class="article-card__content">
+                                <h3 class="article-card__title">Андрей Ковалёв</h3>
+                                <div class="article-type">Бегун, футболист</div>
+                                <div class="article-star">★★★★☆</div>
+                                <p class="article-card__excerpt">Заказывали форму для всей команды — остались очень довольны. Материал лёгкий, хорошо дышит и не сковывает движения во время игры. После нескольких матчей и тренировок форма выглядит как новая.</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="article-card">
+                        <a href="">
+                            <div class="article-card__image">
+                                <img src="/assets/img/avat/avat1.jpg" alt="Чемпионат по баскетболу">
+                            </div>
+                            <div class="article-card__content">
+                                <h3 class="article-card__title">Дмитрий Соловьёв</h3>
+                                <div class="article-type">Бегун, футболист</div>
+                                <div class="article-star">★★★★☆</div>
+                                <p class="article-card__excerpt">Брал экипировку для тренировок и игр. Очень понравилось качество ткани и посадка — удобно двигаться, ничего не тянет и не мешает. Видно, что вещи сделаны с учётом спортивных нагрузок.</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="article-card">
+                        <a href="">
+                            <div class="article-card__image">
+                                <img src="/assets/img/avat/avat2.jpg" alt="Чемпионат по баскетболу">
+                            </div>
+                            <div class="article-card__content">
+                                <h3 class="article-card__title">Екатерина Романова</h3>
+                                <div class="article-type">волейблоистка</div>
+                                <div class="article-star">★★★★☆</div>
+                                <p class="article-card__excerpt">Заказывали форму для нашей команды — получилось очень стильно и удобно. Форма хорошо сидит, не ограничивает движения и выдерживает частые тренировки. Остались довольны и качеством, и результатом.</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="cta-section_content"><a href="#" class="btn news-section__btn">Загрузить ещё</a></div>
+            </div>
+        </section>
+        <section class="seo-section">
+            <div class="container">
+                <h1 class="seo-section__title">Сео текст для продвижения</h1>
+                <div class="seo-section__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="/assets/img/header/icons/footer_logo.svg" alt="ORAZ" class="footer__logo">
+                    <a href="#" class="footer__brand-link"><h2>ПОСЛАНИЕ БРЕНДА</h2></a>
+                </div>
+
+                <nav class="footer__grid">
+                    <!-- О компании -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">О КОМПАНИИ</h4>
+                        <ul class="footer__list">
+                            <li><a href="#">О НАС</a></li>
+                            <li><a href="#">КАТАЛОГ</a></li>
+                            <li><a href="#">ПОЛЕЗНЫЕ СТАТЬИ</a></li>
+                            <li><a href="#">НОВОСТИ</a></li>
+                            <li><a href="#">НАШИ АМБАССАДОРЫ</a></li>
+                            <li><a href="#">ВАКАНСИИ</a></li>
+                            <li><a href="#">ORAZ COMMUNITY</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Контакты -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">КОНТАКТЫ</h4>
+                        <div class="footer__info">
+                            <p>ЮРИДИЧЕСКИЙ АДРЕС</p>
+                            <span>МИНСК, УЛ. СТАХАНОВСКАЯ, 24, ПОМ. 2Н</span>
+                        </div>
+                        <div class="footer__info">
+                            <p>E-MAIL</p>
+                            <a href="mailto:infooraz@gmail.com">INFOORAZ@GMAIL.COM</a>
+                        </div>
+                        <div class="footer__info">
+                            <p>РЕЖИМ РАБОТЫ:</p>
+                            <span>ПН-ПТ: 9-30<br>СБ-ВС: ВЫХОДНОЙ</span>
+                        </div>
+                        <div class="footer__info">
+                            <p>КОНТАКТНЫЙ НОМЕР:</p>
+                            <a href="tel:+375298305264">+375 29 830 5264</a>
+                            <a href="tel:+375445913998">+375 44 591 3998</a>
+                            <a href="tel:+375172510155">+375 17 251 0155</a>
+                        </div>
+                        <div class="footer__socials">
+                            <p>МЫ В СОЦ. СЕТЯХ</p>
+                            <div class="footer__social-links">
+                                <a href="#"><img src="/assets/img/header/icons/tg.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/ins.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/vk.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/f.svg" alt=""></a>
+                                <a href="#"><img src="/assets/img/header/icons/you.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Информация -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">ИНФОРМАЦИЯ</h4>
+                        <ul class="footer__list">
+                            <li><a href="#">ДЛЯ ПОКУПАТЕЛЯ</a></li>
+                            <li><a href="#">ГАРАНТИЯ</a></li>
+                            <li><a href="#">ЛИЦЕНЗИЯ</a></li>
+                            <li><a href="#">ДОСТАВКА | ВОЗВРАТ | ОБМЕН</a></li>
+                            <li><a href="#">СПОСОБЫ ОПЛАТЫ</a></li>
+                            <li><a href="#">ДОГОВОР-ОФЕРТА</a></li>
+                            <li><a href="#">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a></li>
+                            <li><a href="#">ПОЛИТИКА ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</a></li>
+                            <li><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <hr class="footer__divider">
+            <!-- Платежные системы -->
+            <div class="footer__payments">
+                <img src="/assets/img/header/icons/Visa.svg" alt="Visa">
+                <img src="/assets/img/header/icons/Mastercard.svg" alt="Mastercard">
+                <img src="/assets/img/header/icons/belkart.svg" alt="Белкарт">
+                <img src="/assets/img/header/icons/belcart_pass.svg" alt="">
+                <img src="/assets/img/header/icons/bePaid.svg" alt="bePaid">
+                <img src="/assets/img/header/icons/GPay.svg" alt="GPay">
+            </div>
+            <!-- Копирайт -->
+            <div class="footer__bottom">
+                <p>© 2005-2025 Общество с ограниченной ответственностью «СТУДИЯ КРАВЕЦ», все права защищены.</p>
+                <p>УНП: 192121324 Р/с: BY02 BPSB 3012 1632 9501 3933 0000 Банк: ОАО «Сбер Банк» BIC (SWIFT): BPSBBY2X</p>
+                <p>Рег.номер в торговом реестре РБ: 527587 от 26.01.2022. Рег.орган: Администрация Партизанского района города Минска. Дата регистрации: 17.08.2013.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script/swiper-bundle.min.js"></script>
+    <script src="script/index.js"></script>
+</body>
+</html>
