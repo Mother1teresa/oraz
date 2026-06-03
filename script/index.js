@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.querySelector(".offersSwiper")) {
     new Swiper(".offersSwiper", {
       slidesPerView: 3,
-      spaceBetween: 22,
+      spaceBetween: 30,
       navigation: {
         nextEl: ".offers-next",
       },
