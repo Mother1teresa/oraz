@@ -33,104 +33,50 @@
     <button class="btn open-modal" data-target="modal-loyalty">Получить консультацию</button>
     <button class="btn btn-demo-success">Success</button>
     <div id="modal-loyalty" class="modal-overlay">
-      <div class="modal">
-        <button class="modal-close" onclick="closeModal()">×</button>
-        <h1 class="modal-title">Заявка на сотрудничество</h1>
-        <p class="modal-subtitle">Заполните поля</p>
-        <p class="modal-hint">* Поле, обязательное для заполнения.</p>
-        <form class="contacts__form feedback__form">
-          <div class="contacts__form-group feedback__input-group">
-            <label class="contacts__form-label">ФИО</label>
-            <input
-              type="text"
-              name="name"
-              class="contacts__form-input feedback__input"
-              placeholder="Иванов Иван Иванович"
-            />
-            <span class="error-message">Введите ваше имя</span>
-          </div>
-          <div class="contacts__form-group feedback__input-group">
-            <label class="contacts__form-label"
-              >E-mail<span class="required">*</span></label
-            >
-            <input
-              type="email"
-              name="email"
-              class="contacts__form-input feedback__input"
-              placeholder="mail@mail.com"
-            />
-            <span class="error-message">Введите корректный e-mail</span>
-          </div>
-          <div class="contacts__form-group feedback__input-group">
-            <label class="contacts__form-label">Номер телефона</label>
-            <input
-              type="tel"
-              id="phone_by"
-              name="phone"
-              class="contacts__form-input feedback__input"
-              placeholder="+375 (00) 000 0000"
-              maxlength="19"
-            />
-            <span class="error-message">Некорректный номер телефона</span>
-          </div>
-          <div class="contacts__form-group feedback__input-group">
-            <label class="contacts__form-label">Желаемая вакансия</label>
-            <input
-              type="text"
-              name="vacancy"
-              class="contacts__form-input feedback__input"
-              placeholder="Укажите, какая вакансия была бы интересна"
-            />
-          </div>
-          <div class="contacts__form-group feedback__input-group">
-            <label class="contacts__form-label">Текст обращения</label>
-            <textarea
-              name="message"
-              class="contacts__form-input contacts__form-textarea feedback__input"
-              placeholder="Здравствуйте! У меня вопрос..."
-            ></textarea>
-          </div>
-          <div class="contacts__form-group feedback__input-group">
-            <label class="contacts__form-label">О себе</label>
-            <textarea
-              name="about"
-              class="contacts__form-input contacts__form-textarea feedback__input"
-              placeholder="Расскажите о себе — так нам проще будет подобрать для вас вакансию"
-            ></textarea>
-          </div>
-          <div class="form-radio-group">
-            <div class="form-radio">
-              <input
-                type="radio"
-                id="privacy1"
-                name="privacy1"
-                required
-                checked
-              />
-              <label for="privacy1"
-                >Я согласен(-на) на
-                <a href="#">обработку персональных данных</a></label
-              >
-            </div>
-            <div class="form-radio">
-              <input
-                type="radio"
-                id="privacy2"
-                name="privacy2"
-                required
-                checked
-              />
-              <label for="privacy2"
-                >Я согласен(-на) с
-                <a href="#">политикой конфиденциальности</a></label
-              >
-            </div>
-          </div>
-          <div class="contacts__form-footer_btn">
-            <button type="submit" class="btn">Оставить заявку</button>
-          </div>
-        </form>
-      </div>
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h1 class="modal-title">Заявка на сотрудничество</h1>
+            <p class="modal-subtitle">Заполните поля</p>
+            <p class="modal-hint">* Поле, обязательное для заполнения.</p>
+            <form class="contacts__form feedback__form">
+                <div class="contacts__form-group feedback__input-group">
+                    <label class="contacts__form-label">ФИО</label>
+                    <input type="text" name="name" class="contacts__form-input feedback__input" placeholder="Иванов Иван Иванович">
+                    <span class="error-message">Введите ваше имя</span>
+                </div>
+                <div class="contacts__form-group feedback__input-group">
+                    <label class="contacts__form-label">Номер телефона</label>
+                    <input type="tel" id="phone_by" name="phone" class="contacts__form-input feedback__input" placeholder="+375 (00) 000 0000" maxlength="19">
+                    <span class="error-message">Некорректный номер телефона</span>
+                </div>
+                <div class="contacts__form-group feedback__input-group">
+                    <label class="contacts__form-label">E-mail<span class="required">*</span></label>
+                    <input type="email" name="email" class="contacts__form-input feedback__input" placeholder="mail@mail.com">
+                    <span class="error-message">Введите корректный e-mail</span>
+                </div>
+                <div class="contacts__form-group feedback__input-group">
+                    <label class="contacts__form-label">Желаемая вакансия</label>
+                    <input type="text" name="vacancy" class="contacts__form-input feedback__input" placeholder="Укажите, какая вакансия была бы интересна">
+                </div>
+                <div class="contacts__form-group feedback__input-group">
+                    <label class="contacts__form-label">О себе</label>
+                    <textarea name="about" class="contacts__form-input contacts__form-textarea feedback__input" placeholder="Расскажите о себе — так нам проще будет подобрать для вас вакансию"></textarea>
+                </div>
+                <div class="form-radio-group">
+                    <div class="form-radio">
+                        <input type="radio" id="privacy1" name="privacy1" required checked>
+                        <label for="privacy1">Я согласен(-на) на <a href="#">обработку персональных данных</a></label>
+                    </div>
+                    <div class="form-radio">
+                        <input type="radio" id="privacy2" name="privacy2" required checked>
+                        <label for="privacy2">Я согласен(-на) с <a href="#">политикой конфиденциальности</a></label>
+                    </div>
+                </div>
+                <div class="contacts__form-footer_btn">
+                    <button type="submit" class="btn">Оставить заявку</button>
+                </div>
+            </form>
+        </div>
     </div>
     <div class="modal-overlay success-overlay">
       <div class="modal modal--success">
