@@ -1222,7 +1222,7 @@ body.no-scroll {
 
 .error-page {
   position: relative;
-  background: url("/assets/img/404/404-full-bg.png") no-repeat center center;
+  background: url("assets/img/404/404-full-bg.png") no-repeat center center;
   background-size: cover;
   min-height: 50.4rem;
   display: flex;
@@ -3497,7 +3497,7 @@ body.no-scroll {
   display: inline-block;
   width: 3.75rem;
   height: 1.375rem;
-  background-image: url("/assets/img/header/icons/breadcrumbs_svg.svg");  /* ← / в начале */
+  background-image: url("assets/img/header/icons/breadcrumbs_svg.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -3505,17 +3505,14 @@ body.no-scroll {
   transition: transform 0.3s ease;
 }
 
-/* Активное состояние (открыто) — стрелка вниз ↓ */
 .filter-group.active .filter-group__title::after {
-  transform: rotate(270deg); /* ← 45° + 90° = стрелка вниз */
+  transform: rotate(270deg); 
 }
 
-/* Неактивное состояние (закрыто) — стрелка вправо → */
 .filter-group:not(.active) .filter-group__title::after {
-  transform: rotate(90deg); /* ← стрелка вправо */
+  transform: rotate(90deg); 
 }
 
-/* Скрываем контент когда не активно */
 .filter-group:not(.active) .filter-group__list,
 .filter-group:not(.active) .filter-group__content {
   display: none;
