@@ -3140,14 +3140,16 @@ body.no-scroll {
   overflow: hidden;
   height: 37.333rem !important;
 }
+
+.material-card__image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
 .material-card:hover {
   .material-card__image {
     transform: scale(1.03);
   }
-}
-.material-card__image {
-  width: 100%;
-  height: 100%;
 }
 .material-card__image img {
   width: 100%;
